@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <div>
     <title class="titulo">Bootstrap demo</title>
-  </div>
-  <link href="assets\css\bootstrap.min.css" rel="stylesheet" integrity=" " crossorigin="">
-  <link href="assets\css\miestilophp2.css" rel="stylesheet" integrity=" " crossorigin="">
-  <script src="assets\js\bootstrap.bundle.min.js" integrity=" " crossorigin=""></script>
+
+  <link href="assets\css\bootstrap.css" rel="stylesheet">
+  <!--<link href="assets\css\miestilophp2.css" rel="stylesheet" integrity=" " crossorigin="">-->
+  <!--<script src="assets\js\bootstrap.bundle.min.js" ></script>-->
 </head>
 
 <body>
   <section class="Container-fluid">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <img src="assets\img\logo.png" alt="Bootstrap" width="30" height="24">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -25,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo_base_url();?>">Home</a>
+              <a class="nav-link active" aria-current="page" href="<?php echo base_url();?>">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -56,18 +55,18 @@
       </div>
     </nav>
   </section>
-  <section class="Container">
+  <section class="Container-fluid">
     <p class="h1">Este es un titulo con tipografia de Bootstrap</p>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets\img\promo_coca_cola.jpg" class="d-block w-100" alt="" width="1920" height="1080">
+          <img src="assets\img\promo_coca_cola.jpg" class="d-block w-100" alt="" width="" height="">
         </div>
         <div class="carousel-item">
-          <img src="assets\img\promo_lays.jpg" class="d-block w-100" alt="" width="1920" height="1080">
+          <img src="assets\img\promo_lays.jpg" class="d-block w-100" alt="" width="" height="">
         </div>
         <div class="carousel-item">
-          <img src="assets\img\promo_ore.jpeg" class="d-block w-100" alt="" width="1920" height="1080">
+          <img src="assets\img\promo_ore.jpeg" class="d-block w-100" alt="" width="" height="">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -82,7 +81,7 @@
       </button>
     </div>
   </section>
-  <section class="Container">
+  <section class="Container-fluid">
     <div class="grid gap-3">
       <div class="p-2 g-col-6">
         <h1 class="text-center text-uppercase fst-italic fst-italic"> Titulo </h1>
@@ -153,7 +152,7 @@
       </ul>
     </div>
   </footer>
-  <script src="assets\js\popper.min.js" integrity=" " crossorigin=""></script>
+  
   <script src="assets\js\bootstrap.bundle.js" integrity=" " crossorigin=""></script>
 </body>
 

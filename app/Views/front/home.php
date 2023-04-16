@@ -24,26 +24,3 @@
     </button>
   </div>
 </section>
-<section class="Container-fluid">
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
-</div>
-
-<div>
-  <h1>Hola Mundo</h1>
-
-  <p class="parrafo">
-    Este es un parrafo de prueba
-  </p>
-</div>
-</section>

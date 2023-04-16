@@ -9,7 +9,7 @@ class Home extends BaseController
         $data['titulo'] = 'Principal';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
-        echo view('front/prueba');
+        echo view('front/home');
         echo view('front/footer_view');
 
 
@@ -23,7 +23,7 @@ class Home extends BaseController
         $data['titulo'] = 'Contacto';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
-        
+        echo view('front/contacto');
         echo view('front/footer_view');
     }
     public function quienes_somos()
@@ -31,7 +31,7 @@ class Home extends BaseController
         $data['titulo'] = '¿Quienes Somos?';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
-        //echo view('front/prueba');
+        echo view('front/quienes_somos');
         echo view('front/footer_view');
     }
     
@@ -40,7 +40,7 @@ class Home extends BaseController
         $data['titulo'] = 'Comercialización';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
-        //echo view('front/prueba');
+        echo view('front/comorcializacion');
         echo view('front/footer_view');
 
     }
