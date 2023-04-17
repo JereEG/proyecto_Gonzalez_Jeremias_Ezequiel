@@ -9,12 +9,9 @@
     <title><?php echo ($titulo); ?></title>
     <!--********************** bootstrap ********************************-->
    
-    <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
-   
-    <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
-
-
-        
+    <link href="<?php echo base_url('assets/css/bootstrap.css');?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/estilo_la_tienda.css');?>" rel="stylesheet">
+    
 </head>
 
 <body>

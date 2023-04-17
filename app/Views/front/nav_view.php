@@ -1,11 +1,7 @@
-
+<section class="Container-fluid">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="Container-fluid">
             
-
-            <a class="navbar-brand" href="<?php echo base_url('/');?>">
-                <img src="<?php echo base_url('assets/img/kioco_oline.png');?>"  width="150">
-            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -16,7 +12,7 @@
 
                     <li class="nav-item">
 
-                        <a class="nav-link active" aria-current="page" href="<?php echo base_url('/');?>">Principal</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo base_url('/');?>"><img src="<?php echo base_url('assets/img/kioco_oline.png');?>" width="150"></a>
 
                     </li>
                     <li class="nav-item">
@@ -34,26 +30,24 @@
 
 
 
-                 </ul>
-                    <!--<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Comercialización
-                        </a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Comercialización
+                            </a>
+                        </li>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="<?php echo base_url('comercializacion');?>">Comestibles</a></li>
                             <li><a class="dropdown-item" href="<?php echo base_url('comercializacion');?>">No cometibles</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                            <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="<?php echo base_url('comercializacion');?>">Ver todo</a>
                             </li>
                         </ul>
-
+                    </li>
                 </ul>
                 
-                <form class="d-flex" role="search">
+                <!--<form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Ingrese su busqueda..." aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>-->
@@ -61,4 +55,4 @@
         </div>
     </nav>
 
-
+</section>

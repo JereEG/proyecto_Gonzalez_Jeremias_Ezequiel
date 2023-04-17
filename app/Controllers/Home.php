@@ -18,6 +18,14 @@ class Home extends BaseController
         //return view("principal.html");
         //return view('welcome_message');    
     }
+    public function catalogo()
+    {
+        $data['titulo'] = 'Catalogo';
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('front/comorcializacion');
+        echo view('front/footer_view');
+    }
     public function contacto()
     {
         $data['titulo'] = 'Contacto';
@@ -53,6 +61,14 @@ class Home extends BaseController
         echo view('front/sitio_en_construccion');
         echo view('front/footer_view');
 
+    }
+    public function terminos_y_condiciones()
+    {
+        $data['titulo'] = 'Términos y condiciones';
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('front/terminos_y_condiciones');
+        echo view('front/footer_view');
     }
 
 

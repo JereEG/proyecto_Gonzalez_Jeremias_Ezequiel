@@ -34,6 +34,8 @@ $routes->get('quienes_somos', 'Home::quienes_somos');
 $routes->get('contacto', 'Home::contacto');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('sitio_en_construccion', 'Home::sitio_en_construccion');
+$routes->get('terminos_y_condiciones', 'Home::terminos_y_condiciones');
+$routes->get('catogo', 'Home::catalogo');
 
 /*
  * --------------------------------------------------------------------
