@@ -7,7 +7,7 @@
             <div class="card-body">
                 <h5 class="card-title">Cerveza Heineken 1L</h5>
                 <p class="card-text">
-                    Una exelecte opcion para un buen buen rato.
+                    Una excelente opcion para un buen buen rato.
                 </p>
                 <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-primary">Añadir a la bolsa</a>
             </div>

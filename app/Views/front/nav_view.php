@@ -1,4 +1,4 @@
-<div class="Container-fluid">
+<div class="Container-fluid d-flex justify-content-center">
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary ">
         <div class="Container-fluid">
 
@@ -40,10 +40,10 @@
 
 
 
-                    <li class="nav-item dropdown p-2 m-3">
+                    <!--<li class="nav-item dropdown p-2 m-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <h5>Comercialización</h5>
+                            Comercialización
                         </a>
                     </li>
                     <ul class="dropdown-menu">
@@ -54,10 +54,11 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="<?php echo base_url('comercializacion');?>">Ver todo</a>
+                        <li>
+                            <a class="dropdown-item" href="<?php echo base_url('comercializacion');?>">Ver todo</a>
                         </li>
-                    </ul>
-                    </li>
+                    </ul>-->
+                    
                 </ul>
 
                 <!--<form class="d-flex" role="search">
