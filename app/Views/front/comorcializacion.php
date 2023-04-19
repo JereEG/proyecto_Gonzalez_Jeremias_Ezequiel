@@ -2,7 +2,7 @@
 
     <div class="row p-2 text-justify align-items-center">
         <div class="col-4 m-2 card" style="width: 18rem;">
-            <img src="assets/img/cerveza_heineken.png" class="card-img-top "
+            <img class="img-fluid" src="assets/img/cerveza_heineken.png" class="card-img-top "
                 style="width: 100%; height: 175px; object-fit: contain;">
             <div class="card-body">
                 <h5 class="card-title">Cerveza Heineken 1L</h5>

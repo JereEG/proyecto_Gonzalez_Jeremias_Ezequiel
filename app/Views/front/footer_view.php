@@ -1,6 +1,6 @@
-<div class="Container-fluid">
+<div class="Container-fluid ">
     <footer>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-4 p-3 text-justify">
                 <h5>Navegación</h5>
                 <ul class="nav flex-column">
@@ -19,17 +19,17 @@
                 <ul class="nav flex-column">
                     <p>
                         <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
-                            Síguenos en Facebook <img src="assets\img\facebook.svg" class="bi" width="24" height="24">
+                            Síguenos en Facebook <img class="img-fluid" src="assets\img\facebook.png" style="color:#3b5998" class="bi" width="24" height="24">
                         </a>
                     </p>
                     <p>
                         <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
-                            Síguenos en Instagram <img src="assets\img\instagram.svg" class="bi" width="24" height="24">
+                            Síguenos en Instagram <img class="img-fluid" src="assets\img\instagram.png" class="bi" width="24" height="24">
                         </a>
                     </p>
                     <p>
                         <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
-                            Síguenos en Twitter <img src="assets\img\twitter.svg" class="bi" width="24" height="24">
+                            Síguenos en Twitter <img class="img-fluid" src="assets\img\twitter.png" style="color:#00acee" class="bi" width="24" height="24">
                         </a>
                     </p>
 
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="text-justify align-items-center">
+            <div class="text-justify text-center">
                 <p>© 2023 Kiosko Online. Todos los derechos reservados.
                     <a href="<?php echo base_url('terminos_y_condiciones');?>">Términos y Usos</a>
                 </p>

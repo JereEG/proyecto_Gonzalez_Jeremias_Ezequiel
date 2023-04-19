@@ -1,95 +1,134 @@
-<section class="Conteiner-fluid text-justify align-items-center">
+<section class="Conteiner-fluid d-flex justify-content-center">
+    <div class="row d-flex justify-content-center">
+        <div class="text-center p-2 col-12">
+            <img src="<?php echo base_url('assets/img/kioco_oline.png');?>" class="img-fluid">
+            <h1>Contacta a Kiosko Online</h1>
+            <p>Razón social: <em>Kioscko Online S.A.</em></p>
+            <p>Domicilio legal: <em>Los Atacamas 4244, Corrientes Capital, Argentina</em></p>
+            <p>Teléfonos de contacto:</p>
 
+            <li>Teléfono celular: <em>3794906261</em></li>
+            <li>Teléfono fijo: <em>3794414779</em></li>
 
-    <div class="col-md-7 p-2 col-lg-8">
+        </div>
+        <div class="col-12 p-3 text-center text-justify">
+            <h4>Redes Sociales</h4>
+            <ul class="nav flex-column">
+                <p>
+                    <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
+                        Contáctanos en Facebook <img class="img-fluid" src="assets\img\facebook.png" style="color:#3b5998"
+                            class="bi" width="24" height="24">
+                    </a>
+                </p>
+                <p>
+                    <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
+                        Contáctanos en Instagram <img class="img-fluid" src="assets\img\instagram.png" class="bi"
+                            width="24" height="24">
+                    </a>
+                </p>
+                <p>
+                    <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
+                        Contáctanos en Twitter <img class="img-fluid" src="assets\img\twitter.png" style="color:#00acee"
+                            class="bi" width="24" height="24">
+                    </a>
+                </p>
 
-        <h4 class="mb-3">Envíanos tu consulta</h4>
-        <form class="needs-validation" novalidate="">
-            <div class="row g-3">
-                <div class="col-sm-6">
-                    <label for="firstName" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid first name is required.
-                    </div>
-                </div>
+            </ul>
+        </div>
 
-                <div class="col-sm-6">
-                    <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid last name is required.
-                    </div>
-                </div>
+        <div class="col-md-7 p-2 col-lg-8">
 
-                <div class="col-12">
-                    <label for="username" class="form-label">Username</label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text">@</span>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
+            <h4 class="mb-3">Envíanos tu consulta</h4>
+            <form class="needs-validation p-2">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Nombre..." value=""
+                            required="">
                         <div class="invalid-feedback">
-                            Your username is required.
+                            Se requiere un nombre válido.
                         </div>
                     </div>
-                </div>
 
-                <div class="col-12">
-                    <label for="email" class="form-label">Email <span
-                            class="text-body-secondary">(Optional)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                    <div class="invalid-feedback">
-                        Please enter a valid email address for shipping updates.
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Apellido..." value=""
+                            required="">
+                        <div class="invalid-feedback">
+                            Se requiere un apellido válido.
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                    <div class="invalid-feedback">
-                        Please enter your shipping address.
+                    <!--<div class="col-12">
+                        <label for="username" class="form-label">Nombre de usuario</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required="">
+                            <div class="invalid-feedback">
+                                Su nombre de usuario es obligatorio.
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="fulanito@ejemplo.com">
+                        <div class="invalid-feedback">
+                            Introduce una dirección de correo electrónico válida para recibir actualizaciones.
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12">
-                    <label for="address2" class="form-label">Address 2 <span
-                            class="text-body-secondary">(Optional)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                </div>
-
-                <div class="col-md-5">
-                    <label for="country" class="form-label">Country</label>
-                    <select class="form-select" id="country" required="">
-                        <option value="">Choose...</option>
-                        <option>United States</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid country.
+                    <div class="col-12">
+                        <label for="address" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="address" placeholder="Junin 1200" required="">
+                        <div class="invalid-feedback">
+                            Por favor, introduzca su dirección de envío.
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
-                    <select class="form-select" id="state" required="">
-                        <option value="">Choose...</option>
-                        <option>California</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please provide a valid state.
+                    <div class="col-12">
+                        <label for="address2" class="form-label">Numero de piso<span
+                                class="text-body-secondary">(Opcional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartamento o suite">
                     </div>
-                </div>
+                    <div class="row p-3">
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">País</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Elegir...</option>
+                                <option>Argentina</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Seleccione un país válido.
+                            </div>
+                        </div>
 
-                <div class="col-md-3">
-                    <label for="zip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required="">
-                    <div class="invalid-feedback">
-                        Zip code required.
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Provincia</label>
+                            <select class="form-select" id="state" required="">
+                                <option value="">Elegir...</option>
+                                <option>Corrientes</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Proporcione un estado válido.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Código postal</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Se requiere código postal.
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-            </div>
 
-           
 
-            <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar</button>
-        </form>
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar</button>
+            </form>
+        </div>
+
     </div>
 </section>
