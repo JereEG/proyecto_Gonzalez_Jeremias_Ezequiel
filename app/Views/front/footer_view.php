@@ -1,4 +1,4 @@
-<div class="Container-fluid ">
+
     <footer>
         <div class="row text-center">
             <div class="col-4 text-justify">
@@ -9,7 +9,7 @@
                     </li>
                     <li class="nav-item "><a href="<?php echo base_url('quienes_somos');?>"
                             class="nav-link text-body-secondary">¿Quienes somos?</a></li>
-                    <li class="nav-item "><a href="<?php echo base_url('comercializacion');?>"
+                    <li class="nav-item "><a href="<?php echo base_url('catalogo');?>"
                             class="nav-link text-body-secondary">Catalogo</a></li>
                 </ul>
             </div>
@@ -47,7 +47,6 @@
                 </ul>
             </div>
         </div>
-
         <div class="text-center">
             <p>© 2023 Kiosko Online. Todos los derechos reservados.
                 <a href="<?php echo base_url('terminos_y_condiciones');?>">Términos y Usos</a>
@@ -56,9 +55,6 @@
 
 
     </footer>
-
-
-</div>
 
 <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js');?>"></script>
 

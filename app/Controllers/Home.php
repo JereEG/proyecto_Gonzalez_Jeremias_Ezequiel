@@ -9,7 +9,7 @@ class Home extends BaseController
         $data['titulo'] = 'Principal';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
-        echo view('front/home');
+        echo view('front/principal');
         echo view('front/footer_view');
 
 
@@ -18,15 +18,15 @@ class Home extends BaseController
         //return view("principal.html");
         //return view('welcome_message');    
     }
-    public function catalogo()
+    public function f_catalogo()
     {
         $data['titulo'] = 'Catalogo';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
-        echo view('front/comorcializacion');
+        echo view('front/catalogo');
         echo view('front/footer_view');
     }
-    public function contacto()
+    public function f_contacto()
     {
         $data['titulo'] = 'Contacto';
         echo view('front/head_view', $data);
@@ -34,7 +34,7 @@ class Home extends BaseController
         echo view('front/contacto');
         echo view('front/footer_view');
     }
-    public function quienes_somos()
+    public function f_quienes_somos()
     {
         $data['titulo'] = '¿Quienes Somos?';
         echo view('front/head_view', $data);
@@ -43,7 +43,7 @@ class Home extends BaseController
         echo view('front/footer_view');
     }
     
-    public function comercializacion()
+    public function f_comercializacion()
     {
         $data['titulo'] = 'Comercialización';
         echo view('front/head_view', $data);
@@ -53,7 +53,7 @@ class Home extends BaseController
 
     }
 
-    public function sitio_en_construccion()
+    public function f_sitio_en_construccion()
     {
         $data['titulo'] = 'Sitio en Contruccion';
         echo view('front/head_view', $data);
@@ -62,7 +62,7 @@ class Home extends BaseController
         echo view('front/footer_view');
 
     }
-    public function terminos_y_condiciones()
+    public function f_terminos_y_condiciones()
     {
         $data['titulo'] = 'Términos y condiciones';
         echo view('front/head_view', $data);

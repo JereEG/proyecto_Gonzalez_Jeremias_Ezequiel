@@ -1,7 +1,7 @@
-<section class="Conteiner-fluid d-flex justify-content-center">
+<section class="Conteiner-fluid d-flex justify-content-center p-2">
     <div class="row d-flex justify-content-center">
-        <div class="text-center p-2 col-12">
-            <img src="<?php echo base_url('assets/img/kioco_oline.png');?>" class="img-fluid">
+        <div class="text-center">
+            <img src="<?php echo base_url('assets/img/kiosco_online.png');?>" class="img-fluid">
             <h1>Contacta a Kiosko Online</h1>
             <p>Razón social: <em>Kioscko Online S.A.</em></p>
             <p>Domicilio legal: <em>Los Atacamas 4244, Corrientes Capital, Argentina</em></p>
@@ -11,7 +11,7 @@
             <li>Teléfono fijo: <em>3794414779</em></li>
 
         </div>
-        <div class="col-12 p-3 text-center text-justify">
+        <div class="text-center">
             <h4>Redes Sociales</h4>
             <ul class="nav flex-column">
                 <p>
@@ -36,10 +36,10 @@
             </ul>
         </div>
 
-        <div class="col-md-7 p-2 col-lg-8">
+        <div class="col-md-7  col-lg-8">
 
             <h4 class="mb-3">Envíanos tu consulta</h4>
-            <form class="needs-validation p-2">
+            <form class="needs-validation ">
                 <div class="row g-3">
                     <div class="col-sm-6">
                         <label for="firstName" class="form-label">Nombre</label>
@@ -70,7 +70,7 @@
                         </div>
                     </div>-->
 
-                    <div class="col-12">
+                    <div class="">
                         <label for="email" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control" id="email" placeholder="fulanito@ejemplo.com">
                         <div class="invalid-feedback">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="">
                         <label for="address" class="form-label">Dirección</label>
                         <input type="text" class="form-control" id="address" placeholder="Junin 1200" required="">
                         <div class="invalid-feedback">
@@ -86,12 +86,12 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="">
                         <label for="address2" class="form-label">Numero de piso<span
                                 class="text-body-secondary">(Opcional)</span></label>
                         <input type="text" class="form-control" id="address2" placeholder="Apartamento o suite">
                     </div>
-                    <div class="row p-3">
+                    <div class="row p-2">
                         <div class="col-md-5">
                             <label for="country" class="form-label">País</label>
                             <select class="form-select" id="country" required="">

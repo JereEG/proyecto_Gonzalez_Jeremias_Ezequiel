@@ -15,7 +15,7 @@
                     <li class="nav-item ">
 
                         <a class="nav-link active" aria-current="page" href="<?php echo base_url('/');?>"><img
-                                src="<?php echo base_url('assets/img/kioco_oline.png');?>" class="img-fluid"
+                                src="<?php echo base_url('assets/img/kiosco_online.png');?>" class="img-fluid"
                                 style="width: 100%; height: 75px; object-fit: contain;"></a>
 
                     </li>
@@ -33,11 +33,16 @@
                     </li>
 
                     <li class="nav-item p-2 m-3">
-                        <a class="nav-link" href="<?php echo base_url('comercializacion');?>">
+                        <a class="nav-link" href="<?php echo base_url('catalogo');?>">
                             <h5>Nuestro catalogo</h5>
                         </a>
                     </li>
 
+                    <li class="nav-item p-2 m-3">
+                        <a class="nav-link" href="<?php echo base_url('comercializacion');?>">
+                            <h5>Comercialización</h5>
+                        </a>
+                    </li>
 
 
                     <!--<li class="nav-item dropdown p-2 m-3">
@@ -58,7 +63,7 @@
                             <a class="dropdown-item" href="<?php echo base_url('comercializacion');?>">Ver todo</a>
                         </li>
                     </ul>-->
-                    
+
                 </ul>
 
                 <!--<form class="d-flex" role="search">
