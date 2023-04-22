@@ -40,7 +40,7 @@
 
             <h4 class="mb-3">Envíanos tu consulta</h4>
             <form class="needs-validation ">
-                <div class="row g-3">
+                <div class="row g-3 justify-content-center">
                     <div class="col-sm-6">
                         <label for="firstName" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Nombre..." value=""
@@ -126,7 +126,7 @@
                 </div>
 
 
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar</button>
+                <button class="w-25 btn btn-primary btn-sm" type="submit">Enviar</button>
             </form>
         </div>
 

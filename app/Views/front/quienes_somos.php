@@ -1,4 +1,4 @@
-<section class="Container-fluid text-justify">
+<section class="Container-fluid ">
 
     <!--Acordion-->
     <div class="accordion" id="accordionPanelsStayOpenExample">

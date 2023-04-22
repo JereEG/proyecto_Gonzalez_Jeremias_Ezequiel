@@ -1,4 +1,4 @@
-<section class="Conteiner-fluid text-justify align-items-center">
+<section class="Conteiner-fluid text-justify align-items-center ">
 
     <div class="row p-2 text-justify align-items-center">
         <div class="col-4 m-2 card" style="width: 18rem;">

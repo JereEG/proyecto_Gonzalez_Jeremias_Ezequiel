@@ -1,5 +1,5 @@
 
-    <footer>
+    <footer class="pie_pagina p-2 m-2">
         <div class="row text-center">
             <div class="col-4 text-justify">
                 <h5>Navegación</h5>
@@ -57,6 +57,7 @@
     </footer>
 
 <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js');?>"></script>
+<script src="<?php echo base_url('assets/js/swiper.js');?>"></script>
 
 </body>
 

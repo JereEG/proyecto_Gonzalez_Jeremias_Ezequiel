@@ -20,3 +20,23 @@ nav {
     max-width: 100%;
     height: auto;
 }
+
+body {
+    background-color: #E7EBDA;
+}
+
+.barra_navegacion {
+    background-color: #E7EBDA;
+}
+.pie_pagina {
+    background-color: #E7EBDA;
+}
+
+//dar efecto al texto
+a:hover{
+    color: red;
+}
+* {
+    box-sizing: border-box;
+}
+ 

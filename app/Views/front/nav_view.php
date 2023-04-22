@@ -1,8 +1,8 @@
-<div class="Container-fluid d-flex justify-content-center">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary ">
-        <div class="Container-fluid">
+<div class="Container-fluid d-flex justify-content-center barra_navegacion ">
+    <nav class="navbar navbar-expand-lg">
+        <div class="Container-fluid barra_navegacion">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler barra_navegacion" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
