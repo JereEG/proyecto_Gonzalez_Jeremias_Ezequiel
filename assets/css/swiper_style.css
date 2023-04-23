@@ -5,6 +5,9 @@
 }
 
 body {
+  background: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
   
   min-height: 100vh;
 }

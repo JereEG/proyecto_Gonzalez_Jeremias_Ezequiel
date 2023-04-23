@@ -1,5 +1,5 @@
 <section class="Container-fluid">
-    <div class="">
+
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -176,7 +176,6 @@
             </div>
 
         </div>
-    </div>
 
 
 </section>

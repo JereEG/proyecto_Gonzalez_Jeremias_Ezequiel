@@ -16,8 +16,8 @@
             <ul class="nav flex-column">
                 <p>
                     <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
-                        Contáctanos en Facebook <img class="img-fluid" src="assets\img\facebook.png" style="color:#3b5998"
-                            class="bi" width="24" height="24">
+                        Contáctanos en Facebook <img class="img-fluid" src="assets\img\facebook.png"
+                            style="color:#3b5998" class="bi" width="24" height="24">
                     </a>
                 </p>
                 <p>
@@ -124,9 +124,11 @@
                     </div>
 
                 </div>
+                <div class="text-center">
+                    <button class="w-25 btn btn-primary btn-sm" type="submit">Enviar</button>
+                </div>
 
 
-                <button class="w-25 btn btn-primary btn-sm" type="submit">Enviar</button>
             </form>
         </div>
 

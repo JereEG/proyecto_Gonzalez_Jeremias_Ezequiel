@@ -12,7 +12,7 @@
     
     <link href="<?php echo base_url('assets/css/bootstrap.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/estilo_la_tienda.css');?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/swiper_style.css');?>" rel="stylesheet">
+    
 
     
     
