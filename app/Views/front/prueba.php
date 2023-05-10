@@ -1,4 +1,4 @@
-<section class="Container-fluid">
+<section class="container-fluid">
   <p class="h1">Este es un titulo con tipografia de Bootstrap</p>
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -24,7 +24,7 @@
     </button>
   </div>
 </section>
-<section class="Container-fluid">
+<section class="container-fluid">
 <div class="container text-center">
   <div class="row">
     <div class="col">

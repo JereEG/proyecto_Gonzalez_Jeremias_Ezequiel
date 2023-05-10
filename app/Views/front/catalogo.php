@@ -1,4 +1,4 @@
-<section class="Conteiner-fluid">
+<section class="container-fluid">
 
     <div class="row p-2 d-flex justify-content-center">
         <div class="col-4 m-2">

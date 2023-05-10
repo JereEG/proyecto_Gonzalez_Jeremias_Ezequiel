@@ -1,4 +1,4 @@
-<section class="Container-fluid">
+<section class="container-fluid">
 
     <!--Carrusel de presentación-->
     <div id="carrusel_presentacion" class="carousel slide">
@@ -41,7 +41,7 @@
     </div>
 
     <!--<div class="text-center">
-        <h1>Kioco Online los mejores productos al mejor precio</h1>
+        <h1>Kiosco Online los mejores productos al mejor precio</h1>
         <h2>Productos mas vendidos</h2>
         <div class="row p-2 align-items-center">
             <div class="col-4 m-2 card" style="width: 18rem;">
@@ -131,7 +131,7 @@
                         <img src="assets/img/oreo.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$310,00</h5>
-                            <p class="card-text">Galletitas dulce Oreo rellenas con crema 110 g.</p>
+                            <p class="card-text">Oreo rellenas con crema 110 g.</p>
                             <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-primary">Añadir a
                                 la bolsa</a>
                         </div>

@@ -37,6 +37,14 @@ $routes->get('sitio_en_construccion', 'Home::f_sitio_en_construccion');
 $routes->get('terminos_y_condiciones', 'Home::f_terminos_y_condiciones');
 $routes->get('catalogo', 'Home::f_catalogo');
 
+/**
+ * Rutas del Registro de Usuarios
+ */
+$routes->get('registro', 'Usuario_controller::create');
+$routes->post('/enviar-form', 'Usuario_controller::formValidation');
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

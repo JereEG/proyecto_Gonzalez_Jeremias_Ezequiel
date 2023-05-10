@@ -26,6 +26,14 @@ class Home extends BaseController
         echo view('front/catalogo');
         echo view('front/footer_view');
     }
+    /*public function f_registo()
+    {
+        $data['titulo'] = 'Registro';
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/registro');
+        echo view('front/footer_view');
+    }*/
     public function f_contacto()
     {
         $data['titulo'] = 'Contacto';

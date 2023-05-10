@@ -1,4 +1,4 @@
-<section class="Container-fluid">
+<section class="container-fluid">
 
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">

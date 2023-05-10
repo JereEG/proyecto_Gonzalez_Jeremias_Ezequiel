@@ -1,4 +1,4 @@
-<section class="Conteiner-fluid d-flex justify-content-center p-2">
+<section class="container-fluid d-flex justify-content-center">
     <div class="row d-flex justify-content-center">
         <div class="text-center">
             <img src="<?php echo base_url('assets/img/kiosco_online.png');?>" class="img-fluid">
@@ -40,7 +40,7 @@
 
             <h4 class="mb-3">Envíanos tu consulta</h4>
             <form class="needs-validation ">
-                <div class="row g-3 justify-content-center">
+                <div class="row g-3 justify-content-center p-4">
                     <div class="col-sm-6">
                         <label for="firstName" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Nombre..." value=""
@@ -125,7 +125,10 @@
 
                 </div>
                 <div class="text-center">
+                    <button class="w-25 btn btn-primary btn-sm" type="reset">Borrar</button>
                     <button class="w-25 btn btn-primary btn-sm" type="submit">Enviar</button>
+                    
+                    
                 </div>
 
 

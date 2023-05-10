@@ -1,6 +1,6 @@
-<div class="Container-fluid d-flex justify-content-center barra_navegacion ">
+<div class="container-fluid d-flex justify-content-center barra_navegacion ">
     <nav class="navbar navbar-expand-lg">
-        <div class="Container-fluid barra_navegacion">
+        <div class="container-fluid barra_navegacion">
 
             <button class="navbar-toggler barra_navegacion" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -21,14 +21,14 @@
                     </li>
                     <li class="nav-item p-2 m-3">
                         <a class="nav-link" href="<?php echo base_url('quienes_somos');?>">
-                            <h5>¿Quienes Somos?</h5>
+                            <h5>¿Quiénes somos?</h5>
                         </a>
                     </li>
 
 
                     <li class="nav-item p-2 m-3">
                         <a class="nav-link" href="<?php echo base_url('contacto');?>">
-                            <h5>Contacto</h5>
+                            <h5>Contáctanos</h5>
                         </a>
                     </li>
 
@@ -41,6 +41,11 @@
                     <li class="nav-item p-2 m-3">
                         <a class="nav-link" href="<?php echo base_url('comercializacion');?>">
                             <h5>Comercialización</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2 m-3">
+                        <a class="nav-link" href="<?php echo base_url('registro');?>">
+                            <h5>Registrarse</h5>
                         </a>
                     </li>
 

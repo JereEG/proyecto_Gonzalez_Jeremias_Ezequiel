@@ -8,7 +8,7 @@
                             Principal</a>
                     </li>
                     <li class="nav-item "><a href="<?php echo base_url('quienes_somos');?>"
-                            class="nav-link text-body-secondary">¿Quienes somos?</a></li>
+                            class="nav-link text-body-secondary">¿Quiénes somos?</a></li>
                     <li class="nav-item "><a href="<?php echo base_url('catalogo');?>"
                             class="nav-link text-body-secondary">Catalogo</a></li>
                 </ul>
@@ -43,7 +43,7 @@
                 <h5>Envianos tu consulta</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item"><a href="<?php echo base_url('contacto');?>"
-                            class="nav-link text-body-secondary">Contacto</a></li>
+                            class="nav-link text-body-secondary">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
