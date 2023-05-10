@@ -18,28 +18,8 @@
     </div>
             <!-- envio de datos a la ruta /enviar-form -->
     <form method="post" action="<?php echo base_url('/enviar-form') ?>">
-      <div class="card-body" media="(max-width:768px)">
-        <div class="mb-2">
-          <label for="nombre" class="form-label">Nombre</label>
-          <!-- ingreso sel nombre-->
-          <input name="nombre" type="text" class="form-control" value="<?php echo set_value('nombre')?>" placeholder="Nombre">
-          <!-- Error -->
-          <?php if ($validation->getError('nombre')) { ?>
-            <div class='alert alert-danger mt-2'>
-              <?= $error = $validation->getError('nombre'); ?>
-            </div>
-          <?php } ?>
-        </div>
-        <div class="mb-3">
-          <label for="apellido" class="form-label">Apellido</label>
-          <input type="text" name="apellido" class="form-control" value="<?php echo set_value('apellido')?>" placeholder="Apellido">
-          <!-- Error -->
-          <?php if ($validation->getError('apellido')) { ?>
-            <div class='alert alert-danger mt-2'>
-              <?= $error = $validation->getError('apellido'); ?>
-            </div>
-          <?php } ?>
-        </div>
+      
+          
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input name="email" type="email" class="form-control" value="<?php echo set_value('email')?>"  placeholder="correo@algo.com">
@@ -47,16 +27,6 @@
           <?php if ($validation->getError('email')) { ?>
             <div class='alert alert-danger mt-2'>
               <?= $error = $validation->getError('email'); ?>
-            </div>
-          <?php } ?>
-        </div>
-        <div class="mb-3">
-          <label for="usuario" class="form-label">Usuario</label>
-          <input type="text" name="usuario" value="<?php echo set_value('usuario')?>" class="form-control" placeholder="Usuario">
-          <!-- Error -->
-          <?php if ($validation->getError('usuario')) { ?>
-            <div class='alert alert-danger mt-2'>
-              <?= $error = $validation->getError('usuario'); ?>
             </div>
           <?php } ?>
         </div>
@@ -71,6 +41,8 @@
             </div>
           <?php } ?>
         </div>
+
+
         <input type="submit" value="Guardar" class="btn btn-success">
          <input type="reset" value="cancelar" class="btn btn-danger">
       </div>

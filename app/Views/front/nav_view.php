@@ -49,6 +49,12 @@
                         </a>
                     </li>
 
+                    <li class="nav-item p-2 m-3">
+                        <a class="nav-link" href="<?php echo base_url('ingreso');?>">
+                            <h5>Ingresar</h5>
+                        </a>
+                    </li>
+
 
                     <!--<li class="nav-item dropdown p-2 m-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

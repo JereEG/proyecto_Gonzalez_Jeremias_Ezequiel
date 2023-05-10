@@ -67,3 +67,21 @@ in APPPATH\Views\back\registro.php on line 25.
  6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 19:06:57 --> syntax error, unexpected token "<"
+in APPPATH\Views\back\registro.php on line 5.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/registro', [], true)
+ 3 APPPATH\Controllers\Usuario_controller.php(17): view('back/registro')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 19:36:20 --> Invalid file: "back/usuario/ingreso.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/usuario/ingreso.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back/usuario/ingreso', [], true)
+ 3 APPPATH\Controllers\Usuario_controller.php(26): view('back/usuario/ingreso')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->ingreso()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

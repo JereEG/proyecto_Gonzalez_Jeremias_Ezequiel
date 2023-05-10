@@ -44,6 +44,13 @@ $routes->get('registro', 'Usuario_controller::create');
 $routes->post('/enviar-form', 'Usuario_controller::formValidation');
 
 
+/**
+ * Rutas del Ingreso de Usuarios
+ */
+$routes->get('ingreso', 'Usuario_controller::ingreso');
+$routes->post('/enviar-form', 'Usuario_controller::formValidation');
+
+
 
 /*
  * --------------------------------------------------------------------

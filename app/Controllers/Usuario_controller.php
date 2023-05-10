@@ -14,7 +14,16 @@ class Usuario_controller extends Controller{
          $dato['titulo']='Registro'; 
          echo view('front/head_view',$dato);
          echo view('front/nav_view');
-         echo view('back/registro');
+         echo view('back/usuario/registro');
+         echo view('front/footer_view');
+      }
+
+      public function ingreso() {
+        
+         $dato['titulo']='Ingreso'; 
+         echo view('front/head_view',$dato);
+         echo view('front/nav_view');
+         echo view('back/login/ingreso');
          echo view('front/footer_view');
       }
  
@@ -51,7 +60,7 @@ class Usuario_controller extends Controller{
               //return $this->response->redirect(site_url(''));
 
             // Flashdata funciona solo en redirigir la función en el controlador en la vista de carga.
-               session()->setFlashdata('success', 'Usuario registrado con exito');
+               session()->setFlashdata('success', 'Usuario registrado con éxito');
                return $this->response->redirect(site_url('/registro'));
       
         }
