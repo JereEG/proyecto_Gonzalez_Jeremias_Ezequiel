@@ -48,7 +48,7 @@ $routes->post('/enviar-form', 'Usuario_controller::formValidation');
  * Rutas del Ingreso de Usuarios
  */
 $routes->get('ingreso', 'Usuario_controller::ingreso');
-$routes->post('/enviar-form', 'Usuario_controller::formValidation');
+$routes->post('/enviar-form', 'Usuario_controller::formValidationLogin');
 
 
 
