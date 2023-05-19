@@ -78,7 +78,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="cards-wrapper">
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/coca_cola_no_retornable.jpg" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$750,00</h5>
@@ -87,7 +87,7 @@
                                 la bolsa</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/lays_clasica.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$610,00</h5>
@@ -96,7 +96,7 @@
                                 la bolsa</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/chetos.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$675,00</h5>
@@ -109,7 +109,7 @@
             </div>
             <div class="carousel-item">
                 <div class="cards-wrapper">
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/cerveza_heineken.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$950,00</h5>
@@ -118,7 +118,7 @@
                                 la bolsa</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/fanta_no_retornable.jpg" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$612,00</h5>
@@ -127,7 +127,7 @@
                                 la bolsa</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/oreo.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$310,00</h5>
@@ -140,7 +140,7 @@
             </div>
             <div class="carousel-item">
                 <div class="cards-wrapper">
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/aceite_natura.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$775,00</h5>
@@ -148,7 +148,7 @@
                             <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-primary">Añadir a la bolsa</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/acite cocinero.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">$774,00</h5>
@@ -156,7 +156,7 @@
                             <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-primary">Añadir a la bolsa</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-12 col-sm-4">
                         <img src="assets/img/galletita_salada.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">70,00</h5>

@@ -49,6 +49,8 @@ $routes->post('/enviar-form', 'Usuario_controller::formValidation');
  */
 $routes->get('ingreso', 'Login_controller::ingreso');
 $routes->post('/enviar-form-login', 'Login_controller::auth');
+$routes->get('/cerrar-login', 'Login_controller::logout');
+//$routes->get('/principal', 'Home::prueba');
 
 
 

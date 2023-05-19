@@ -120,7 +120,7 @@
       </div>
       <div class="text-center">
         <button class="w-25 btn btn-danger btn-sm" type="reset">Cancelar</button>
-        <button class="w-25 btn btn-primary btn-sm" type="submit">Ingresar</button>
+        <button class="w-25 btn btn-primary btn-sm" type="submit">Registrar</button>
 
 
       </div>
