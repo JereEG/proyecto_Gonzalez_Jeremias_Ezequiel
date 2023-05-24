@@ -3,9 +3,43 @@ namespace App\Controllers;
 
 use App\Models\Producto_model;
 Use App\Models\Usuarios_model;
+use App\Models\Ventas_cabecera_model;
+use App\Models\Ventas_detalle_model;
 use CodeIgniter\Controller;
 
 class ProductoController extends Controller {
+
+    public function __construct()
+    {
+        helper(['url', 'form', 'html']);
+        //$db = \Config\Database::connect();
+    }
+
+    //mostrar los productos en lista
+    public function index()
+    {
+        $productoModel = new Producto_model();
+
+        $data['producto'] = $productoModel->orderBy('id', 'DESC')->findAll();
+
+        $data['titulo'] = 'Crud_productos';
+        echo view('front\head_view');
+        echo view('front\nav_view');
+        echo view('back\productos\producto_nuevo_view');
+        echo view('front\footer_view.php');
+    }
+
+    public function crearproducto() {
+        $productoModel = new Producto_model();
+        $aux['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        
+        $data['titulo'] = 'Alta producto';
+
+        echo view('front\head_view', $data);
+        echo view('front\nav_view');
+        echo view('back\productos\alta_producto_view');
+        echo view('front\footer_view.php');
+    }
 
     public function store() {
         $input = $this->validate([
@@ -23,7 +57,7 @@ class ProductoController extends Controller {
            $dato['titulo'] = 'Alta';
             echo view('front/head_view', $dato);
             echo view('front/nav_view');
-            echo view('back/usuario/alta_producto_view', [
+            echo view('back/productos/alta_producto_view', [
                 'validation' => $this->validator
             ]);
             
@@ -41,7 +75,7 @@ class ProductoController extends Controller {
                 'stock' => $this->request->getVar('stock'),
                 'stock_min' => $this->request->getVar('stock_min'),
                 //'eliminado' => NO
-            ]
+            ];
 
             $producto = new Producto_model();
             $producto->insert($data);

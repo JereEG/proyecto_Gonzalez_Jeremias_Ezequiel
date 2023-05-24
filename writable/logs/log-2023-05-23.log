@@ -1,0 +1,77 @@
+INFO - 2023-05-23 05:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-23 05:29:35 --> Undefined variable $dato
+in APPPATH\Controllers\ProductoController.php on line 38.
+ 1 APPPATH\Controllers\ProductoController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Controllers\\ProductoController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:30:07 --> Undefined variable $dato
+in APPPATH\Controllers\ProductoController.php on line 38.
+ 1 APPPATH\Controllers\ProductoController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Controllers\\ProductoController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:30:17 --> Undefined variable $titulo
+in APPPATH\Views\front\head_view.php on line 9.
+ 1 APPPATH\Views\front\head_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'APPPATH\\Views\\front\\head_view.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\head_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front\\head_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(38): view('front\\head_view')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:30:31 --> Undefined variable $dato
+in APPPATH\Controllers\ProductoController.php on line 38.
+ 1 APPPATH\Controllers\ProductoController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Controllers\\ProductoController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:31:00 --> Undefined variable $dato
+in APPPATH\Controllers\ProductoController.php on line 38.
+ 1 APPPATH\Controllers\ProductoController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Controllers\\ProductoController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:31:01 --> Undefined variable $dato
+in APPPATH\Controllers\ProductoController.php on line 38.
+ 1 APPPATH\Controllers\ProductoController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Controllers\\ProductoController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:32:12 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php on line 38
+in SYSTEMPATH\Helpers\url_helper.php on line 138.
+ 1 APPPATH\Controllers\ProductoController.php(38): base_url('front\\head_view', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:32:32 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php on line 38
+in SYSTEMPATH\Helpers\url_helper.php on line 138.
+ 1 APPPATH\Controllers\ProductoController.php(38): base_url('front\\head_view', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:32:34 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php on line 38
+in SYSTEMPATH\Helpers\url_helper.php on line 138.
+ 1 APPPATH\Controllers\ProductoController.php(38): base_url('front\\head_view', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 05:32:35 --> base_url(): Argument #2 ($scheme) must be of type ?string, array given, called in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php on line 38
+in SYSTEMPATH\Helpers\url_helper.php on line 138.
+ 1 APPPATH\Controllers\ProductoController.php(38): base_url('front\\head_view', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->crearproducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-23 05:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 05:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
