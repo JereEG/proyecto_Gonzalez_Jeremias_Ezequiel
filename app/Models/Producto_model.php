@@ -8,7 +8,8 @@ class Producto_model extends Model
 {
     protected $table = 'productos';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['descripcion_prod', 'imagen', 'cod_categorias', 'precio', 'precio_venta', 'stock', 'stock_min', 'eliminado'];
+
+    protected $allowedFields = ['descripcion_prod', 'imagen', 'cod_categoria', 'precio', 'precio_venta', 'stock', 'stock_min', 'eliminado'];
 
     /*function get_ventas_cabecera() {
         $this->db->select('ventas_cabecera.*, usuarios.nombre');

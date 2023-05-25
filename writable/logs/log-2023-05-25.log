@@ -1,0 +1,1131 @@
+INFO - 2023-05-25 00:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 00:07:04 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getName()
+in APPPATH\Controllers\ProductoController.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 00:07:56 --> Undefined variable $img
+in APPPATH\Controllers\ProductoController.php on line 104.
+ 1 APPPATH\Controllers\ProductoController.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $img', 'APPPATH\\Controllers\\ProductoController.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:16:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`)) in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:16:35 --> Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:18:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`)) in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:18:57 --> Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:23:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`)) in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:23:10 --> Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:23:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`)) in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:23:45 --> Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:26:21 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:26:21 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:27:20 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:27:20 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 00:27:37 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:27:37 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:27:47 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:27:47 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:28:02 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:28:02 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:29:13 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:29:13 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:32:01 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(117): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:32:01 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(117): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:40:03 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(119): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:40:03 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(119): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:40:25 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(119): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:40:25 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(119): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:40:45 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(119): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:40:45 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(119): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 00:48:43 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(119): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 00:48:43 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(119): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 00:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 00:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:02:24 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(119): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:02:24 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(119): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:04:03 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(119): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:04:03 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(119): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:08:34 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(119): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:08:34 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(119): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:11:44 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:11:44 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:12:14 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:12:14 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:13:18 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:13:18 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:13:50 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:13:50 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:20:44 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:20:44 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:24:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`)) in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:24:45 --> Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:24:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`)) in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:24:49 --> Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:27:58 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-25 01:27:58 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductoController.php(108): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:32:46 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:32:46 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:36:53 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-05-25 01:36:53 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:36:53 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 01:36:53 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:37:41 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:37:41 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:40:27 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:40:27 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:50:40 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:50:40 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:51:37 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:51:37 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:52:38 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(111): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:52:38 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:53:00 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(111): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:53:00 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 01:53:44 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:53:44 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 01:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 01:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 01:54:22 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 01:54:22 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 02:36:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`)) in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 02:36:36 --> Cannot add or update a child row: a foreign key constraint fails (`bd_gonzalez_jeremias`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`cod_categoria`) REFERENCES `categorias` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 02:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-25 02:44:09 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(125): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 02:44:09 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(125): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 02:46:54 --> mysqli_sql_exception: Unknown column 'cod_categorias' in 'field list' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\ProductoController.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-25 02:46:54 --> Unknown column 'cod_categorias' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`descripcion_prod`, `imagen`, `cod_categorias`, `precio`, `precio_venta`, `stock`, `stock_min`) VALUES (:descripcion_prod:, :imagen:, :cod_categorias:, :precio:, :precio_venta:, :stock:, :stock_min:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductoController.php(124): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 03:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
