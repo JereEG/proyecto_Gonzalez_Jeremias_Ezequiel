@@ -20,24 +20,24 @@ class ProductoController extends Controller {
     {
         $productoModel = new Producto_model();
 
-        $data['producto'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $data['productos'] = $productoModel->orderBy('id', 'DESC')->findAll();
 
         $data['titulo'] = 'Crud_productos';
-        echo view('front\head_view');
+        echo view('front\head_view', $data);
         echo view('front\nav_view');
-        echo view('back\productos\producto_nuevo_view');
+        echo view('back\productos\crud_productos', $data);
         echo view('front\footer_view.php');
     }
 
     public function crearproducto() {
         $productoModel = new Producto_model();
-        $aux['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $lista_productos['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
         
         $data['titulo'] = 'Alta producto';
 
         echo view('front\head_view', $data);
         echo view('front\nav_view');
-        echo view('back\productos\alta_producto_view');
+        echo view('back\productos\alta_producto_view', $lista_productos);
         echo view('front\footer_view.php');
     }
 
@@ -80,22 +80,11 @@ class ProductoController extends Controller {
                 ],
             ],
             'imagen' => [
-                'rules'  => 'is_image[imagen]',
+                'rules'  => 'required|is_image[imagen]',
                 'errors' => [
-                    'is_image[imagen]' => 'A {field} debes subir una imagen.',
+                    'required|is_image[imagen]' => 'A {field} debes subir una imagen.',
                 ]
             ],
-                    
-            /*'imagen' => [
-                is_image[imagen]
-                'rules'  => 'uploaded[imagen]',
-                'mime_in[imagen,image/jpg,image/jpeg,image/png,image/gif]',
-                'max_size[imagen,4096]',
-                'errors' => [
-                    'required' => 'A {field} debes colocar una descripción de al menos 3 letras.',
-                ],
-                
-            ],*/
         ];
 
         $producto = new Producto_model();
@@ -118,22 +107,12 @@ class ProductoController extends Controller {
                 'stock_min' => $this->request->getVar('stock-min'),
                 //'eliminado' => NO
             ];
-            var_dump($data);
+            //var_dump($data);
             //exit();
             //$producto = new Producto_model();
             $producto->insert($data);
 
             
-            /*$producto->save([
-                'descripcion_prod' => $this->request->getVar('nombre-prod'),
-                'imagen' => $img->getName(),
-                'cod_categorias' => $this->request->getVar('cod-categoria-prod'),
-                'precio' => $this->request->getVar('precio'),
-                'precio_venta' => $this->request->getVar('precio-venta'),
-                'stock' => $this->request->getVar('stock'),
-                'stock_min' => $this->request->getVar('stock-min'),
-
-            ]);*/
                    
 
             return $this->response->redirect(site_url('/'));
@@ -151,52 +130,24 @@ class ProductoController extends Controller {
                 echo '<script language="javascript">alert("No se cargo la imagen");</script>'; # code...
             }*/
         }
-        /*$input = $this->validate([
-            'nombre-prod' => 'required|min_length[2]',
-            'cod_categoria' => 'is_not_unique[categorias.id]',
-            'precio' => 'required',
-            'precio_venta' => 'required',
-            'stock' => 'required',
-            'stock_min' => 'required',
-        ]);
-
-        var_dump($input);
-        exit();
-        $productoModel = new Producto_Model();
-
-        if (!$input) {
-            var_dump("llego aca 4");
-           $dato['titulo'] = 'Alta';
-            echo view('front/head_view', $dato);
-            echo view('front/nav_view');
-            echo view('back/productos/alta_producto_view', [
-                'validation' => $this->validator
-            ]);
-
-            
-        } else {
-            var_dump("llego aca 5");
-            $img = $this->request->getFile('imagen');
-            $nombre_aleatorio = $img->getRandomName();
-            $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
-
-            $data = [
-                'descripcion_prod' => $this->request->getVar('nombre-prod'),
-                'imagen' => $img->getName(),
-                'cod_categoria' => $this->request->getVar('cod-categoria-prod'),
-                'precio' => $this->request->getVar('precio'),
-                'precio_venta' => $this->request->getVar('precio-venta'),
-                'stock' => $this->request->getVar('stock'),
-                'stock_min' => $this->request->getVar('stock-min'),
-                //'eliminado' => NO
-            ];
-            
-            var_dump("llego aca 6");
-            $producto = new Producto_model();
-            $producto->insert($data);
-
-            return $this->response->redirect(site_url('crear'));
-        }   */
+        
     } /** cierra el store */
+
+    public function editarproducto($id = null) {
+
+        $productoModel = new Producto_model();
+        
+        $data['titulo'] = 'Editar producto';
+
+        //$id= $this->request->getPostGet('id');
+        //$data['producto'] = $productoModel->where('id', $id)->first();
+        $data['old'] = $productoModel->where('id', $id)->first();
+
+        echo view('front\head_view', $data);
+        echo view('front\nav_view');
+        echo view('back\productos\editar_producto_view', $data);
+        echo view('front\footer_view.php');
+    }
+
 
 }

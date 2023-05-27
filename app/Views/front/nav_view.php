@@ -68,7 +68,7 @@ $perfil = $session->get('perfil_id');
                             </a>
                         </li>
                         <li class="nav-item p-2 m-3">
-                            <a class="nav-link" href="<?php echo base_url('/'); ?>">
+                            <a class="nav-link" href="<?php echo base_url('/crud'); ?>">
                                 <h5>CRUD Productos</h5>
                             </a>
                         </li>

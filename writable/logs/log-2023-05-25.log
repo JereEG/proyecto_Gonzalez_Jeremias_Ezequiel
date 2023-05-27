@@ -1129,3 +1129,247 @@ in SYSTEMPATH\Database\BaseConnection.php on line 645.
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-05-25 03:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 20:18:02 --> Undefined variable $titulo
+in APPPATH\Views\front\head_view.php on line 9.
+ 1 APPPATH\Views\front\head_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'APPPATH\\Views\\front\\head_view.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\front\\head_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('front\\head_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(26): view('front\\head_view')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 20:18:34 --> syntax error, unexpected token ","
+in APPPATH\Controllers\ProductoController.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProductoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 20:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 20:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 20:54:56 --> Undefined variable $lista_productos
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 17.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lista_productos', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 21:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 21:01:19 --> Undefined variable $data
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 17.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 21:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:09:36 --> Attempt to read property "imagen" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "imagen" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:10:26 --> Attempt to read property "imagen" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "imagen" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:10:38 --> Attempt to read property "precio_venta" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 12.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "precio_venta" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:10:58 --> Attempt to read property "precio_venta" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 12.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "precio_venta" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:11:18 --> Attempt to read property "imagen" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "imagen" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:11:54 --> Attempt to read property "imagen" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "imagen" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:13:37 --> Attempt to read property "imagen" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "imagen" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:13:41 --> Attempt to read property "imagen" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "imagen" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:14:02 --> Attempt to read property "imagen" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "imagen" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:15:22 --> Attempt to read property "precio_venta" on array
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 12.
+ 1 APPPATH\Views\back\productos\producto_nuevo_view.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "precio_venta" on array', 'APPPATH\\Views\\back\\productos\\producto_nuevo_view.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\producto_nuevo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:21:23 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 13.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:39:26 --> syntax error, unexpected variable "$producto", expecting ")"
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 23:49:12 --> syntax error, unexpected identifier "imagen", expecting ")"
+in APPPATH\Views\back\productos\producto_nuevo_view.php on line 10.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\producto_nuevo_view', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(28): view('back\\productos\\producto_nuevo_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-25 23:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 23:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

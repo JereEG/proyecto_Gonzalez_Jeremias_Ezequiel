@@ -4,13 +4,14 @@
         <div class="text-center p-2">
             
             <button class="w-25 btn btn-primary btn-sm" onclick="location.href='<?php echo base_url('produ-form'); ?>'">Agregar nuevo producto</button>
-            <button class="w-25 btn btn-danger btn-sm" onclick="location.href='<?php echo base_url('/'); ?>'">Eliminar producto</button>
+            <!--<button class="w-25 btn btn-danger btn-sm" onclick="location.href='<?php echo base_url('/'); ?>'">Eliminar producto</button>-->
 
         </div>
         <div class="row p-2">
             
 
             <?php foreach($productos as $producto ):?>
+                <?php if($producto['eliminado'] == "NO"):?>
                 <div class="col-12 col-sm-4">
                     <div class="card">
                         <img src="assets\uploads\<?= $producto['imagen']?>" class="card-img-top" >
@@ -22,12 +23,16 @@
                             <p class="card-title">Stock mínimo: <?php echo $producto['stock_min']?></p>
                             <p class="card-title">Eliminado: <?php echo $producto['eliminado']?></p>
                             
-                            <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-primary">Editar</a>
-                            <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-danger">Eliminar</a>
+                            <a href="<?php echo base_url();?>/editar/<?php echo $producto['id'];?>" class="btn btn-primary">
+                                <img class="img-fluid" src="assets\img\pencil-square.svg" class="bi" width="24" height="24">
+                            </a>
+                            <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-danger">
+                                <img class="img-fluid" src="assets\img\trash-fill.svg" class="bi" width="24" height="24">
+                            </a>
                         </div>
                     </div>
                 </div>
-                
+                <?php endif;?>                
             <?php endforeach;?>
         </div>
 

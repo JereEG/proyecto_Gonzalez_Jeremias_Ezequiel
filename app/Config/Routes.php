@@ -55,15 +55,20 @@ $routes->get('/cerrar-login', 'Login_controller::logout');
 /**
  * Rutas de Productos
  */
-$routes->get('/crear', 'ProductoController::index');
-$routes->get('/agregar', 'ProductoController::index');
+$routes->get('/crud', 'ProductoController::index');
+//$routes->get('/agregar', 'ProductoController::index');
 $routes->get('/produ-form', 'ProductoController::crearproducto');
 $routes->post('/enviar-prod', 'ProductoController::store');
+
+$routes->get('/editar/(:num)', 'ProductoController::editarproducto/$1');
+
+/*
 /*$routes->get('/editar/(:num)', 'ProductoController::singleproducto/$1');
 $routes->get('/agregar', 'ProductoController::index');
 $routes->get('/crear', 'ProductoController::index');
 $routes->get('/agregar', 'ProductoController::index');
-$routes->get('/crear', 'ProductoController::index');*/
+$routes->get('/crear', 'ProductoController::index');
+*/
 
 
 
