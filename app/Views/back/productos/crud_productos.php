@@ -23,7 +23,7 @@
                             <p class="card-title">Stock mínimo: <?php echo $producto['stock_min']?></p>
                             <p class="card-title">Eliminado: <?php echo $producto['eliminado']?></p>
                             
-                            <a href="<?php echo base_url();?>/editar/<?php echo $producto['id'];?>" class="btn btn-primary">
+                            <a href="<?php echo base_url();?>vista_editar/<?php echo $producto['id'];?>" class="btn btn-primary">
                                 <img class="img-fluid" src="assets\img\pencil-square.svg" class="bi" width="24" height="24">
                             </a>
                             <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-danger">

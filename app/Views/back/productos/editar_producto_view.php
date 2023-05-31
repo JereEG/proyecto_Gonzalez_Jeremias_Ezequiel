@@ -22,7 +22,7 @@
 
     <div class="d-flex justify-content-center">
         <!-- Inicio del formulario -->
-        <form method="post" action="<?php echo base_url('/enviar-prod') ?>" enctype="multipart/form-data">
+        <form method="post" action="<?php echo base_url('/editar/' . $old['id']);?>" enctype="multipart/form-data">
             <!--<php if(true):
                 /*$descripcion_producto = $producto['descripcion_prod'];
                 $precio = $producto['precio'];
@@ -108,10 +108,13 @@
                 </div>
 
                 <!-- Completar -->
-
+                
+                <?php var_dump($old['imagen'])?>
                 <div class="file">
+                    
                     <label for="formGroupExampleInput">Imagen</label>
-                    <input type="file" name="imagen" >
+                    <input type="file" name="imagen"  >
+                    <!--<img src="<?php echo base_url()?>assets/uploads/<?=$old['imagen'];?>" >-->
                     <!-- Error -->
                     <?php if ($validation->getError('imagen')) { ?>
                         <div class='alert alert-danger mt-2'>
@@ -125,8 +128,8 @@
 
 
             </div>
-
-            <div class="text-center">
+            
+            <div class="text-center row-12">
                 <button class="w-25 btn btn-danger btn-sm" type="reset">Cancelar</button>
                 <button class="w-25 btn btn-primary btn-sm" type="submit">Guardar</button>
             </div>

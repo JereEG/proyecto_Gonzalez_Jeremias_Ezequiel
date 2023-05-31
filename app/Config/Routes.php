@@ -60,7 +60,9 @@ $routes->get('/crud', 'ProductoController::index');
 $routes->get('/produ-form', 'ProductoController::crearproducto');
 $routes->post('/enviar-prod', 'ProductoController::store');
 
-$routes->get('/editar/(:num)', 'ProductoController::editarproducto/$1');
+$routes->get('/vista_editar/(:num)', 'ProductoController::vistaEditarProducto/$1');
+$routes->post('/editar/(:num)', 'ProductoController::editarProducto/$1');
+
 
 /*
 /*$routes->get('/editar/(:num)', 'ProductoController::singleproducto/$1');

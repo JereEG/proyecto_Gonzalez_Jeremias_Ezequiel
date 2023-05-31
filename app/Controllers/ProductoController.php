@@ -115,7 +115,7 @@ class ProductoController extends Controller {
             
                    
 
-            return $this->response->redirect(site_url('/'));
+            return $this->response->redirect(site_url('/crud'));
 
         } else {
             /***Se muestran los errores */
@@ -133,8 +133,7 @@ class ProductoController extends Controller {
         
     } /** cierra el store */
 
-    public function editarproducto($id = null) {
-        
+    public function vistaEditarProducto($id = null) {
 
         $productoModel = new Producto_model();
         
@@ -148,10 +147,103 @@ class ProductoController extends Controller {
         echo view('front\nav_view');
         echo view('back\productos\editar_producto_view', $data);
         echo view('front\footer_view.php');
-
-        
-
     }
 
+    public function editarProducto($id = null) {
 
+        $rules = [
+            'nombre-prod' => [
+                'rules'  => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'A {field} debes colocar una descripción de al menos 3 letras.',
+                ],
+            ],
+        
+            'precio'=> [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar un precio.',
+                ],
+            ],
+            'precio-venta'       => [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar un precio de venta.',
+                ],
+            ],
+            'stock' => [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar el stock.',
+                ],
+            ],
+            'stock-min' =>
+            [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar el stock mínimo.',
+                ],
+            ],
+            'imagen' => [
+                'rules'  => 'is_image[imagen]',
+                'errors' => [
+                    
+                    'is_image[imagen]' => 'A {field} debes subir un tipo de imagen.',
+                ]
+            ],
+        ];
+
+        $producto = new Producto_model();
+        
+        if ($this->validate($rules)) {
+            //Si no se subió una imagen se asume que no actualizara imagen
+            if ($this->request->getFile('imagen') != NULL) {
+                $img = $this->request->getFile('imagen');
+                $nombre_aleatorio = $img->getRandomName();
+                $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
+
+                $data = [
+                    'descripcion_prod' => $this->request->getVar('nombre-prod'),
+                    'imagen' => $img->getName(),
+                    'cod_categoria' => $this->request->getVar('cod_categoria'),
+                    'precio' => $this->request->getVar('precio'),
+                    'precio_venta' => $this->request->getVar('precio-venta'),
+                    'stock' => $this->request->getVar('stock'),
+                    'stock_min' => $this->request->getVar('stock-min'),
+                    //'eliminado' => NO
+                ];
+
+            } else {
+                 $data = [
+                    'descripcion_prod' => $this->request->getVar('nombre-prod'),
+                    'cod_categoria' => $this->request->getVar('cod_categoria'),
+                    'precio' => $this->request->getVar('precio'),
+                    'precio_venta' => $this->request->getVar('precio-venta'),
+                    'stock' => $this->request->getVar('stock'),
+                    'stock_min' => $this->request->getVar('stock-min'),
+                    //'eliminado' => NO
+                ];
+            }
+        
+            $producto->update($id, $data);
+
+            return $this->response->redirect(site_url('/crud'));
+
+        } else {
+            /***Se muestran los errores */
+            
+            $dato['titulo'] = 'Editar producto';
+            echo view('front/head_view', $dato);
+            echo view('front/nav_view');
+            echo view('back/productos/alta_producto_view', [
+                'validation' => $this->validator
+            ]);
+            /*if ($this->request->getVar('imagen') == NULL) {
+                echo '<script language="javascript">alert("No se cargo la imagen");</script>'; # code...
+            }*/
+        }
+
+    
+
+    }
 }

@@ -15,3 +15,436 @@ INFO - 2023-05-31 18:10:43 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-05-31 18:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-05-31 18:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-05-31 18:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:33:57 --> Undefined variable $productoModel
+in APPPATH\Controllers\ProductoController.php on line 217.
+ 1 APPPATH\Controllers\ProductoController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productoModel', 'APPPATH\\Controllers\\ProductoController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:45:09 --> Undefined variable $productoModel
+in APPPATH\Controllers\ProductoController.php on line 217.
+ 1 APPPATH\Controllers\ProductoController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productoModel', 'APPPATH\\Controllers\\ProductoController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:45:18 --> Undefined variable $productoModel
+in APPPATH\Controllers\ProductoController.php on line 217.
+ 1 APPPATH\Controllers\ProductoController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productoModel', 'APPPATH\\Controllers\\ProductoController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:45:49 --> Undefined variable $productoModel
+in APPPATH\Controllers\ProductoController.php on line 217.
+ 1 APPPATH\Controllers\ProductoController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productoModel', 'APPPATH\\Controllers\\ProductoController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:45:50 --> Undefined variable $productoModel
+in APPPATH\Controllers\ProductoController.php on line 217.
+ 1 APPPATH\Controllers\ProductoController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productoModel', 'APPPATH\\Controllers\\ProductoController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:47:18 --> Undefined variable $productoModel
+in APPPATH\Controllers\ProductoController.php on line 217.
+ 1 APPPATH\Controllers\ProductoController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productoModel', 'APPPATH\\Controllers\\ProductoController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:47:20 --> Undefined variable $productoModel
+in APPPATH\Controllers\ProductoController.php on line 217.
+ 1 APPPATH\Controllers\ProductoController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productoModel', 'APPPATH\\Controllers\\ProductoController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:50:33 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:50:37 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:51:28 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:51:33 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarproducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:54:58 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:56:07 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 19:00:40 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 19:00:44 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 19:00:48 --> Undefined variable $producto
+in APPPATH\Views\back\productos\editar_producto_view.php on line 25.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 19:16:04 --> Unclosed '{' on line 10
+in APPPATH\Controllers\ProductoController.php on line 237.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProductoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:16:05 --> Unclosed '{' on line 10
+in APPPATH\Controllers\ProductoController.php on line 237.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProductoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:16:11 --> Unclosed '{' on line 10
+in APPPATH\Controllers\ProductoController.php on line 237.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProductoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:16:13 --> Unclosed '{' on line 10
+in APPPATH\Controllers\ProductoController.php on line 237.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProductoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 19:35:46 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductoController.php(195): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\assets\\uploads', '1685561746_1351061fa963fee03a26')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarProducto('8')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 20:05:40 --> syntax error, unexpected identifier "imagen", expecting ")"
+in APPPATH\Views\back\productos\editar_producto_view.php on line 115.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 20:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 20:07:21 --> syntax error, unexpected identifier "imagen", expecting ")"
+in APPPATH\Views\back\productos\editar_producto_view.php on line 115.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 20:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 20:10:48 --> syntax error, unexpected identifier "imagen", expecting ")"
+in APPPATH\Views\back\productos\editar_producto_view.php on line 115.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(148): view('back\\productos\\editar_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 20:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 20:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 20:45:56 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductoController.php(203): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\assets\\uploads', '1685565955_b0c21ef7feb8cee5c410')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarProducto('8')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 20:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 20:46:31 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductoController.php(203): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\assets\\uploads', '1685565991_0cbb57d919d72618b7b9')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarProducto('8')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 20:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 20:48:07 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductoController.php(203): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\assets\\uploads', '1685566087_5aa3299fbd0152a1d691')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarProducto('8')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 20:48:41 --> syntax error, unexpected single-quoted string "cod_categoria", expecting "]"
+in APPPATH\Controllers\ProductoController.php on line 220.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProductoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 20:48:43 --> syntax error, unexpected single-quoted string "cod_categoria", expecting "]"
+in APPPATH\Controllers\ProductoController.php on line 220.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProductoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 21:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 21:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 21:57:35 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductoController.php(203): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\assets\\uploads', '1685570255_dcde570539842ac0f573')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarProducto('8')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 21:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 21:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 21:58:17 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductoController.php(203): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\assets\\uploads', '1685570297_ec5de4ab3420f2e7a045')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->editarProducto('8')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 21:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
