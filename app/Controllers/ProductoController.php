@@ -28,6 +28,17 @@ class ProductoController extends Controller {
         echo view('back\productos\crud_productos', $data);
         echo view('front\footer_view.php');
     }
+    public function vista_productos_eliminados() {
+        $productoModel = new Producto_model();
+        $lista_productos['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        
+        $data['titulo'] = 'Alta producto';
+
+        echo view('front\head_view', $data);
+        echo view('front\nav_view');
+        echo view('back\productos\productos_eliminados_view', $lista_productos);
+        echo view('front\footer_view.php');
+    }
 
     public function crearproducto() {
         $productoModel = new Producto_model();
@@ -41,7 +52,9 @@ class ProductoController extends Controller {
         echo view('front\footer_view.php');
     }
 
-    public function store() {
+    
+
+    public function alta_producto() {
         //var_dump($this->request->getVar('imagen'));
         //exit();
         //$data = $this->request->getVar('nombre-prod');
@@ -148,10 +161,20 @@ class ProductoController extends Controller {
         echo view('back\productos\editar_producto_view', $data);
         echo view('front\footer_view.php');
     }
+    public function eliminarProducto($id = null) {
+        $producto = new Producto_model();
+        $data = [
+                    'eliminado' => "SI"
+                ];
+        $producto->update($id, $data);
+
+        return $this->response->redirect(site_url('/crud'));
+    }
 
     public function editarProducto($id = null) {
-
-        $rules = [
+        /**Si tiene un nombre quiere decir que se debe agregar la regla para la imagen también */
+        if ($this->request->getFile('imagen')->getName() != NULL) {
+            $rules = [
             'nombre-prod' => [
                 'rules'  => 'required|min_length[3]',
                 'errors' => [
@@ -184,20 +207,59 @@ class ProductoController extends Controller {
                     'required' => 'A {field} debes colocar el stock mínimo.',
                 ],
             ],
-            'imagen' => [
+           'imagen' => [
                 'rules'  => 'is_image[imagen]',
                 'errors' => [
                     
                     'is_image[imagen]' => 'A {field} debes subir un tipo de imagen.',
                 ]
             ],
-        ];
+            ];
+        } else { /**de lo contrario no se debe agregar la regla para la imagen */
+            $rules = [
+            'nombre-prod' => [
+                'rules'  => 'required|min_length[3]',
+                'errors' => [
+                    'required' => 'A {field} debes colocar una descripción de al menos 3 letras.',
+                ],
+            ],
+        
+            'precio'=> [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar un precio.',
+                ],
+            ],
+            'precio-venta'       => [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar un precio de venta.',
+                ],
+            ],
+            'stock' => [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar el stock.',
+                ],
+            ],
+            'stock-min' =>
+            [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'A {field} debes colocar el stock mínimo.',
+                ],
+            ],
+            ];
+        }
+        
+       
 
         $producto = new Producto_model();
         
         if ($this->validate($rules)) {
+
             //Si no se subió una imagen se asume que no actualizara imagen
-            if ($this->request->getFile('imagen') != NULL) {
+            if ($this->request->getFile('imagen')->getName() != NULL) {             
                 $img = $this->request->getFile('imagen');
                 $nombre_aleatorio = $img->getRandomName();
                 $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);

@@ -3,8 +3,8 @@
         <h2 class="text-center">CRUD de productos</h2>
         <div class="text-center p-2">
             
-            <button class="w-25 btn btn-primary btn-sm" onclick="location.href='<?php echo base_url('produ-form'); ?>'">Agregar nuevo producto</button>
-            <button class="w-25 btn btn-primary btn-sm" onclick="location.href='<?php echo base_url('produ-eliminados'); ?>'">Ver productos eliminados</button>
+            <button class="w-25 btn btn-primary btn-sm" onclick="location.href='<?php echo base_url('crud'); ?>'">Volver al menu anterior</button>
+            
             <!--<button class="w-25 btn btn-danger btn-sm" onclick="location.href='<?php echo base_url('/'); ?>'">Eliminar producto</button>-->
 
         </div>
@@ -12,7 +12,7 @@
             
 
             <?php foreach($productos as $producto ):?>
-                <?php if($producto['eliminado'] == "NO"):?>
+                <?php if($producto['eliminado'] == "SI"):?>
                 <div class="col-12 col-sm-4">
                     <div class="card">
                         <img src="assets\uploads\<?= $producto['imagen']?>" class="card-img-top" >
@@ -27,7 +27,7 @@
                             <a href="<?php echo base_url();?>vista_editar/<?php echo $producto['id'];?>" class="btn btn-primary">
                                 <img class="img-fluid" src="assets\img\pencil-square.svg" class="bi" width="24" height="24">
                             </a>
-                            <a href="<?php echo base_url('produ-eliminar');?>" class="btn btn-danger">
+                            <a href="<?php echo base_url('sitio_en_construccion');?>" class="btn btn-danger">
                                 <img class="img-fluid" src="assets\img\trash-fill.svg" class="bi" width="24" height="24">
                             </a>
                         </div>

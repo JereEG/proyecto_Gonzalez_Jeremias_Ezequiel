@@ -1,6 +1,6 @@
 <div class="container-fluid p-4 ">
 
-    <div class="">
+    <div class="text-center">
         <h4 class="">Editar Producto</h4>
     </div>
 
@@ -109,19 +109,27 @@
 
                 <!-- Completar -->
                 
-                <?php var_dump($old['imagen'])?>
-                <div class="file">
-                    
-                    <label for="formGroupExampleInput">Imagen</label>
-                    <input type="file" name="imagen"  >
-                    <!--<img src="<?php echo base_url()?>assets/uploads/<?=$old['imagen'];?>" >-->
-                    <!-- Error -->
-                    <?php if ($validation->getError('imagen')) { ?>
-                        <div class='alert alert-danger mt-2'>
-                            <?= $error = $validation->getError('imagen'); ?>
-                        </div>
-                    <?php } ?>
+                <!--<?php var_dump($old['imagen'])?>-->
+                <div class="col-12 col-sm-3">
+                    <h5>Imagen del producto original</h5>
+                    <img class="img-fluid" style="object-fit: contain;" src="<?php echo base_url()?>assets/uploads/<?=$old['imagen'];?>" >
                 </div>
+                
+                    <h5>Opcionalmente puede cambiarla:</h5>
+                    <div class="file">
+                    
+                        <label for="formGroupExampleInput">Imagen</label>
+                        <input type="file" name="imagen"  >
+                        <!-- Error -->
+                        <?php if ($validation->getError('imagen')) { ?>
+                            <div class='alert alert-danger mt-2'>
+                                <?= $error = $validation->getError('imagen'); ?>
+                            </div>
+                        <?php } ?>
+                    </div>
+                
+                
+                
 
 
 
