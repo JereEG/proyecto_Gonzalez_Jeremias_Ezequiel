@@ -134,6 +134,7 @@ class ProductoController extends Controller {
     } /** cierra el store */
 
     public function editarproducto($id = null) {
+        
 
         $productoModel = new Producto_model();
         
@@ -147,6 +148,9 @@ class ProductoController extends Controller {
         echo view('front\nav_view');
         echo view('back\productos\editar_producto_view', $data);
         echo view('front\footer_view.php');
+
+        
+
     }
 
 
