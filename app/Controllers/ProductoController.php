@@ -30,13 +30,13 @@ class ProductoController extends Controller {
     }
     public function vista_productos_eliminados() {
         $productoModel = new Producto_model();
-        $lista_productos['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $data['productos'] = $productoModel->orderBy('id', 'DESC')->findAll();
         
-        $data['titulo'] = 'Alta producto';
+        $data['titulo'] = 'Productos Eliminados';
 
         echo view('front\head_view', $data);
         echo view('front\nav_view');
-        echo view('back\productos\productos_eliminados_view', $lista_productos);
+        echo view('back\productos\productos_eliminados_view', $data);
         echo view('front\footer_view.php');
     }
 
@@ -50,6 +50,39 @@ class ProductoController extends Controller {
         echo view('front\nav_view');
         echo view('back\productos\alta_producto_view', $lista_productos);
         echo view('front\footer_view.php');
+    }
+    public function vistaEditarProducto($id = null) {
+
+        $productoModel = new Producto_model();
+        
+        $data['titulo'] = 'Editar producto';
+
+        //$id= $this->request->getPostGet('id');
+        //$data['producto'] = $productoModel->where('id', $id)->first();
+        $data['old'] = $productoModel->where('id', $id)->first();
+
+        echo view('front\head_view', $data);
+        echo view('front\nav_view');
+        echo view('back\productos\editar_producto_view', $data);
+        echo view('front\footer_view.php');
+    }
+    public function eliminarProducto($id = null) {
+        $producto = new Producto_model();
+        $data = [
+                    'eliminado' => "SI"
+                ];
+        $producto->update($id, $data);
+
+        return $this->response->redirect(site_url('/crud'));
+    }
+    public function restaurarProducto($id = null) {
+        $producto = new Producto_model();
+        $data = [
+                    'eliminado' => "NO"
+                ];
+        $producto->update($id, $data);
+
+        return $this->response->redirect(site_url('/crud'));
     }
 
     
@@ -96,12 +129,15 @@ class ProductoController extends Controller {
                 'rules'  => 'required|is_image[imagen]',
                 'errors' => [
                     'required|is_image[imagen]' => 'A {field} debes subir una imagen.',
+                    'is_image[imagen]' => 'A {field} debe ser una imagen.',
                 ]
             ],
         ];
 
         $producto = new Producto_model();
-        
+        //var_dump($rules);
+        //exit();
+
         if ($this->validate($rules)) {
             $img = $this->request->getFile('imagen');
             $nombre_aleatorio = $img->getRandomName();
@@ -125,15 +161,13 @@ class ProductoController extends Controller {
             //$producto = new Producto_model();
             $producto->insert($data);
 
-            
-                   
 
             return $this->response->redirect(site_url('/crud'));
 
         } else {
             /***Se muestran los errores */
             
-            $dato['titulo'] = 'Alta';
+            $dato['titulo'] = 'Error en Alta de producto';
             echo view('front/head_view', $dato);
             echo view('front/nav_view');
             echo view('back/productos/alta_producto_view', [
@@ -146,30 +180,7 @@ class ProductoController extends Controller {
         
     } /** cierra el store */
 
-    public function vistaEditarProducto($id = null) {
-
-        $productoModel = new Producto_model();
-        
-        $data['titulo'] = 'Editar producto';
-
-        //$id= $this->request->getPostGet('id');
-        //$data['producto'] = $productoModel->where('id', $id)->first();
-        $data['old'] = $productoModel->where('id', $id)->first();
-
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\productos\editar_producto_view', $data);
-        echo view('front\footer_view.php');
-    }
-    public function eliminarProducto($id = null) {
-        $producto = new Producto_model();
-        $data = [
-                    'eliminado' => "SI"
-                ];
-        $producto->update($id, $data);
-
-        return $this->response->redirect(site_url('/crud'));
-    }
+    
 
     public function editarProducto($id = null) {
         /**Si tiene un nombre quiere decir que se debe agregar la regla para la imagen también */

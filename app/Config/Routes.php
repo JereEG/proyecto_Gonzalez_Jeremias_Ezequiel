@@ -65,7 +65,9 @@ $routes->post('/editar/(:num)', 'ProductoController::editarProducto/$1');
 
 $routes->get('/produ-eliminados', 'ProductoController::vista_productos_eliminados');
 
-$routes->get('/produ-eliminar', 'ProductoController::eliminarProducto');
+$routes->get('/produ-eliminar/(:num)', 'ProductoController::eliminarProducto/$1');
+
+$routes->get('/produ-restaurar/(:num)', 'ProductoController::restaurarProducto/$1');
 
 
 

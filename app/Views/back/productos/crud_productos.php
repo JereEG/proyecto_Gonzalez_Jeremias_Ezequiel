@@ -27,7 +27,7 @@
                             <a href="<?php echo base_url();?>vista_editar/<?php echo $producto['id'];?>" class="btn btn-primary">
                                 <img class="img-fluid" src="assets\img\pencil-square.svg" class="bi" width="24" height="24">
                             </a>
-                            <a href="<?php echo base_url('produ-eliminar');?>" class="btn btn-danger">
+                            <a href="<?php echo base_url();?>produ-eliminar/<?php echo $producto['id'];?>" class="btn btn-danger">
                                 <img class="img-fluid" src="assets\img\trash-fill.svg" class="bi" width="24" height="24">
                             </a>
                         </div>
