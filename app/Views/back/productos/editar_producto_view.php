@@ -138,7 +138,7 @@
             </div>
             
             <div class="text-center row-12">
-                <button class="w-25 btn btn-danger btn-sm" type="reset">Cancelar</button>
+                <button class="w-25 btn btn-danger btn-sm" type="reset">Reiniciar</button>
                 <button class="w-25 btn btn-primary btn-sm" type="submit">Guardar</button>
             </div>
 

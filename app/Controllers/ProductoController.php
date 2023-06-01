@@ -126,19 +126,19 @@ class ProductoController extends Controller {
                 ],
             ],
             'imagen' => [
-                'rules'  => 'required|is_image[imagen]',
+                'rules'  => 'is_image[imagen]',
                 'errors' => [
-                    'required|is_image[imagen]' => 'A {field} debes subir una imagen.',
+                    'required' => 'A {field} debes subir una imagen.',
                     'is_image[imagen]' => 'A {field} debe ser una imagen.',
                 ]
             ],
         ];
 
         $producto = new Producto_model();
-        //var_dump($rules);
+        //var_dump($this->validate($rules));
         //exit();
 
-        if ($this->validate($rules)) {
+        if ($this->validate($rules) && $this->request->getFile('imagen') != NULL) {
             $img = $this->request->getFile('imagen');
             $nombre_aleatorio = $img->getRandomName();
             $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
@@ -178,7 +178,7 @@ class ProductoController extends Controller {
             }*/
         }
         
-    } /** cierra el store */
+    } /** cierra  */
 
     
 
