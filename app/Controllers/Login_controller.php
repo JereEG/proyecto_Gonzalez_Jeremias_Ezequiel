@@ -40,7 +40,7 @@ class Login_controller extends Controller{
             //password_verify determina los requisitos de configuración de la contraseña
             if($verify_pass) {
                 $ses_data = [ //array de la sesión 
-                    'id' => $data['id'],
+                    'id_usuario' => $data['id_usuario'],
                     'nombre' => $data['nombre'],
                     'apellido' => $data['apellido'],
                     'email' => $data['email'],

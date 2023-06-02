@@ -24,7 +24,7 @@
                             <p class="card-title">Stock mínimo: <?php echo $producto['stock_min']?></p>
                             <p class="card-title">Eliminado: <?php echo $producto['eliminado']?></p>
 
-                            <a href="<?php echo base_url();?>produ-restaurar/<?php echo $producto['id'];?>" class="btn btn-danger">
+                            <a href="<?php echo base_url();?>produ-restaurar/<?php echo $producto['id_producto'];?>" class="btn btn-danger">
                                 Restaurar
                             </a>
                         </div>

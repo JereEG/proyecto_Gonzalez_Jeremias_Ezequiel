@@ -22,7 +22,7 @@
 
     <div class="d-flex justify-content-center">
         <!-- Inicio del formulario -->
-        <form method="post" action="<?php echo base_url('/editar/' . $old['id']);?>" enctype="multipart/form-data">
+        <form method="post" action="<?php echo base_url('/editar/' . $old['id_producto']);?>" enctype="multipart/form-data">
             <!--<php if(true):
                 /*$descripcion_producto = $producto['descripcion_prod'];
                 $precio = $producto['precio'];
@@ -49,9 +49,10 @@
                 
                 <div class="col-md-6">
                     <label for="cod_categoria" class="form-label">Código de categoría</label>
-                    <select name="cod_categoria" class="form-select" required="">
+                    <select name="cod_categoria" class="form-select" required>
                         <option value="">Elegir...</option>
                         <option value="2">1-Bebidas</option>
+                        <!--<option value="<?php= $old['cod_categoria']?>"><?php= $old['cod_categoria']->nombre_categoria ?></option>-->
                     </select>
                     <?php if ($validation->getError('cod_categoria')) { ?>
                         <div class='alert alert-danger mt-2'>

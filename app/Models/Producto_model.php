@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Producto_model extends Model
 {
     protected $table = 'productos';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_producto';
 
     protected $allowedFields = ['descripcion_prod', 'imagen', 'cod_categoria', 'precio', 'precio_venta', 'stock', 'stock_min', 'eliminado'];
 

@@ -1,6 +1,8 @@
 <div class="container-fluid p-4 ">
-
-    <div class="">
+    <div>
+        <a class="btn btn-primary" href="<?php echo base_url('/crud') ?>"><h5>Volver</h5></a>
+    </div>
+    <div class="text-center">
         <h4 class="">Altas de Productos</h4>
     </div>
 
@@ -128,7 +130,7 @@
             </div>
 
             <div class="text-center">
-                <button class="w-25 btn btn-danger btn-sm" type="reset">Cancelar</button>
+                <button class="w-25 btn btn-danger btn-sm" type="reset">Restaurar</button>
                 <button class="w-25 btn btn-primary btn-sm" type="submit">Guardar</button>
             </div>
 

@@ -20,7 +20,7 @@ class ProductoController extends Controller {
     {
         $productoModel = new Producto_model();
 
-        $data['productos'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $data['productos'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
 
         $data['titulo'] = 'Crud_productos';
         echo view('front\head_view', $data);
@@ -30,7 +30,7 @@ class ProductoController extends Controller {
     }
     public function vista_productos_eliminados() {
         $productoModel = new Producto_model();
-        $data['productos'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $data['productos'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
         
         $data['titulo'] = 'Productos Eliminados';
 
@@ -42,7 +42,7 @@ class ProductoController extends Controller {
 
     public function crearproducto() {
         $productoModel = new Producto_model();
-        $lista_productos['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $lista_productos['obj'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
         
         $data['titulo'] = 'Alta producto';
 
@@ -59,7 +59,7 @@ class ProductoController extends Controller {
 
         //$id= $this->request->getPostGet('id');
         //$data['producto'] = $productoModel->where('id', $id)->first();
-        $data['old'] = $productoModel->where('id', $id)->first();
+        $data['old'] = $productoModel->where('id_producto', $id)->first();
 
         echo view('front\head_view', $data);
         echo view('front\nav_view');
