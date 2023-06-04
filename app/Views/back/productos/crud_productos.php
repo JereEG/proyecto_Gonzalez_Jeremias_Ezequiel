@@ -13,7 +13,7 @@
 
             <?php foreach($productos as $producto ):?>
                 <?php if($producto['eliminado'] == "NO"):?>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-4 p-2">
                     <div class="card">
                         <img src="assets\uploads\<?= $producto['imagen']?>" class="card-img-top" >
                         <div class="card-body">

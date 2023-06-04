@@ -114,7 +114,7 @@
 
                 <div class="file">
                     <label for="formGroupExampleInput">Imagen</label>
-                    <input type="file" name="imagen" >
+                    <input required type="file" name="imagen" >
                     <!-- Error -->
                     <?php if ($validation->getError('imagen')) { ?>
                         <div class='alert alert-danger mt-2'>

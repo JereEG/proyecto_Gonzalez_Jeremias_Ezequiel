@@ -54,8 +54,10 @@ $perfil = $session->get('perfil_id');
                             </a>
                         </li>
 
+                        
+
                         <li class="nav-item p-2 m-3">
-                            <a class="nav-link" href="<?php echo base_url('cerrar-login'); ?>">
+                            <a class="btn btn-danger" href="<?php echo base_url('cerrar-login'); ?>">
                                 <h5>Cerrar sección</h5>
                             </a>
                         </li>
@@ -79,8 +81,16 @@ $perfil = $session->get('perfil_id');
                             </a>
                         </li>
 
+                        <li class="nav-item p-1">
+                        
+                            <a class="nav-link active" aria-current="page" href="<?php echo base_url('/carrito'); ?>"><img
+                                    src="<?php echo base_url('assets/img/carrito.svg'); ?>" class="img-fluid"
+                                    style="width: 100%; height: 75px; object-fit: contain;"></a>
+                        
+                        </li>
+
                         <li class="nav-item p-2 m-3">
-                            <a class="nav-link" href="<?php echo base_url('cerrar-login'); ?>">
+                            <a class="btn btn-danger" href="<?php echo base_url('cerrar-login'); ?>">
                                 <h5>Cerrar sección</h5>
                             </a>
                         </li>
@@ -97,7 +107,7 @@ $perfil = $session->get('perfil_id');
 
                         <li class="nav-item p-2 m-3">
                             <a class="nav-link" href="<?php echo base_url('contacto'); ?>">
-                                <h5>Contáctanos</h5>
+                                <h5>Contáctenos</h5>
                             </a>
                         </li>
 
@@ -113,17 +123,16 @@ $perfil = $session->get('perfil_id');
                             </a>
                         </li>
 
-                        <li class="nav-item p-2 m-3">
-                            <a class="nav-link" href="<?php echo base_url('registro'); ?>">
-                                <h5>Registrarse</h5>
-                            </a>
-                        </li>
 
                         <li class="nav-item p-2 m-3">
-                            <a class="nav-link" href="<?php echo base_url('ingreso'); ?>">
+                            <a class="btn btn-primary" href="<?php echo base_url('registro'); ?>">
+                                <h5>Registrarse</h5>
+                            </a>
+                            <a class="btn btn-primary" href="<?php echo base_url('ingreso'); ?>">
                                 <h5>Ingresar</h5>
                             </a>
                         </li>
+
                     <?php endif ?>
                     <!--<li class="nav-item dropdown p-2 m-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

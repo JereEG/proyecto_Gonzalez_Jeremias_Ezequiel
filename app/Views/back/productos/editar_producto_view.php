@@ -1,8 +1,11 @@
+
 <div class="container-fluid p-4 ">
 
+    <a class="btn btn-primary" href="<?php echo base_url('/crud') ?>"><h5>Volver</h5></a>
     <div class="text-center">
         <h4 class="">Editar Producto</h4>
     </div>
+    
 
     <!-- Validación -->
     <div>
@@ -18,6 +21,7 @@
     </div>
 
     <?php $validation = \Config\Services::validation(); ?>
+    
     
 
     <div class="d-flex justify-content-center">
@@ -37,8 +41,9 @@
 
                 <div class="col-sm-6">
                     <label for="exampleFormControlInput1" class="form-label">Descripción de producto</label>
-                    <input name="nombre-prod" type="text" class="form-control" value="<?php echo $old['descripcion_prod'];?>" placeholder="Queso La Paulina Cocina">
+                    <input required name="nombre-prod" type="text" class="form-control" value="<?php echo $old['descripcion_prod'];?>" placeholder="Queso La Paulina Cocina">
                     <!-- Error -->
+                    
                     <?php if ($validation->getError('nombre-prod')) { ?>
                         <div class='alert alert-danger mt-2'>
                             <?= $error = $validation->getError('nombre-prod'); ?>
@@ -66,7 +71,7 @@
 
                 <div class="col-sm-6">
                     <label for="precio" class="form-label">Precio</label>
-                    <input name="precio" type="number" step="0.01" class="form-control" value="<?php echo $old['precio'];?>" placeholder="100.0">
+                    <input required name="precio" type="number" step="0.01" class="form-control" value="<?php echo $old['precio'];?>" placeholder="100.0">
                     <!-- Error -->
                     <?php if ($validation->getError('precio')) { ?>
                         <div class='alert alert-danger mt-2'>
@@ -77,7 +82,7 @@
 
                 <div class="col-sm-6">
                     <label for="precio-venta" class="form-label">Precio de Venta</label>
-                    <input name="precio-venta" type="number" step="0.01" class="form-control" value="<?php echo $old['precio_venta'];?>" placeholder="130.0">
+                    <input required name="precio-venta" type="number" step="0.01" class="form-control" value="<?php echo $old['precio_venta'];?>" placeholder="130.0">
                     <!-- Error -->
                     <?php if ($validation->getError('precio-venta')) { ?>
                         <div class='alert alert-danger mt-2'>
@@ -88,7 +93,7 @@
 
                 <div class="col-sm-6">
                     <label for="stock" class="form-label">Stock</label>
-                    <input name="stock" type="number" step="0.01" class="form-control" value="<?php echo $old['stock'];?>" placeholder="100">
+                    <input required name="stock" type="number" step="0.01" class="form-control" value="<?php echo $old['stock'];?>" placeholder="100">
                     <!-- Error -->
                     <?php if ($validation->getError('stock')) { ?>
                         <div class='alert alert-danger mt-2'>
@@ -99,7 +104,7 @@
 
                 <div class="col-sm-6">
                     <label for="stock-min" class="form-label">Stock Mínimo</label>
-                    <input name="stock-min" type="number" step="0.01" class="form-control" value="<?php echo $old['stock_min'];?>" placeholder="1">
+                    <input required name="stock-min" type="number" step="0.01" class="form-control" value="<?php echo $old['stock_min'];?>" placeholder="1">
                     <!-- Error -->
                     <?php if ($validation->getError('stock-min')) { ?>
                         <div class='alert alert-danger mt-2'>
@@ -122,11 +127,15 @@
                         <label for="formGroupExampleInput">Imagen</label>
                         <input type="file" name="imagen"  >
                         <!-- Error -->
-                        <?php if ($validation->getError('imagen')) { ?>
-                            <div class='alert alert-danger mt-2'>
-                                <?= $error = $validation->getError('imagen'); ?>
-                            </div>
-                        <?php } ?>
+                        
+                        <?php if (!($validation->getError('imagen') === "")):?>
+                            
+                            <?php if ($validation->getError('imagen')): ?>
+                                <div class='alert alert-danger mt-2'>
+                                    <?= $error = $validation->getError('imagen'); ?>
+                                </div>
+                            <?php endif?>
+                        <?php endif?>
                     </div>
                 
                 

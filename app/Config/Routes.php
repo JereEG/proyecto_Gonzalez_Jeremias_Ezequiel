@@ -80,6 +80,12 @@ $routes->get('/crear', 'ProductoController::index');
 */
 
 
+/**
+ * Rutas del carrito
+ */
+$routes->get('/carrito', 'Carrito_controller::ver_carrito');
+
+
 
 /*
  * --------------------------------------------------------------------
