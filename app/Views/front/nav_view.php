@@ -53,6 +53,14 @@ $perfil = $session->get('perfil_id');
                                 <h5>Comercialización</h5>
                             </a>
                         </li>
+                        
+                        <li class="nav-item p-1">
+                        
+                            <a class="nav-link active" aria-current="page" href="<?php echo base_url('/carrito'); ?>"><img
+                                    src="<?php echo base_url('assets/img/carrito.svg'); ?>" class="img-fluid"
+                                    style="width: 100%; height: 75px; object-fit: contain;"></a>
+                        
+                        </li>
 
                         
 
@@ -74,6 +82,12 @@ $perfil = $session->get('perfil_id');
                                 <h5>CRUD Productos</h5>
                             </a>
                         </li>
+
+                         <li class="nav-item p-2 m-3">
+                            <a class="nav-link" href="<?php echo base_url('/crud_categorias'); ?>">
+                                <h5>CRUD Categorías</h5>
+                            </a>
+                        </li>
                         
                         <li class="nav-item p-2 m-3">
                             <a class="nav-link" href="<?php echo base_url('/'); ?>">
@@ -81,13 +95,13 @@ $perfil = $session->get('perfil_id');
                             </a>
                         </li>
 
-                        <li class="nav-item p-1">
+                        <!--<li class="nav-item p-1">
                         
                             <a class="nav-link active" aria-current="page" href="<?php echo base_url('/carrito'); ?>"><img
                                     src="<?php echo base_url('assets/img/carrito.svg'); ?>" class="img-fluid"
                                     style="width: 100%; height: 75px; object-fit: contain;"></a>
                         
-                        </li>
+                        </li>-->
 
                         <li class="nav-item p-2 m-3">
                             <a class="btn btn-danger" href="<?php echo base_url('cerrar-login'); ?>">

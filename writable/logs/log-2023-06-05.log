@@ -1,0 +1,332 @@
+INFO - 2023-06-05 00:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-05 00:10:51 --> Undefined variable $producto
+in APPPATH\Views\back\categorias\categorias_view.php on line 37.
+ 1 APPPATH\Views\back\categorias\categorias_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\categorias\\categorias_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\categorias\\categorias_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\categorias\\categorias_view', [], true)
+ 5 APPPATH\Controllers\CategoriasController.php(29): view('back\\categorias\\categorias_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 00:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-05 00:12:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\back\productos\editar_producto_view.php on line 29.
+ 1 APPPATH\Views\back\productos\editar_producto_view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\back\\productos\\editar_producto_view.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\productos\\editar_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\productos\\editar_producto_view', [], true)
+ 5 APPPATH\Controllers\ProductoController.php(73): view('back\\productos\\editar_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->vistaEditarProducto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 00:12:55 --> mysqli_sql_exception: Unknown column 'id_producto' in 'where clause' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-05 00:12:55 --> Unknown column 'id_producto' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `id_producto` = :id_producto:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 00:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-05 00:15:07 --> mysqli_sql_exception: Unknown column 'id_producto' in 'where clause' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-05 00:15:07 --> Unknown column 'id_producto' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `id_producto` = :id_producto:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 00:18:16 --> mysqli_sql_exception: Unknown column 'id_producto' in 'where clause' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-05 00:18:16 --> Unknown column 'id_producto' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `id_producto` = :id_producto:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 00:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-05 00:18:22 --> mysqli_sql_exception: Unknown column 'id_producto' in 'where clause' in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-05 00:18:22 --> Unknown column 'id_producto' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `id_producto` = :id_producto:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\CategoriasController.php(37): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->vistaEditarCategoria('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 00:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 00:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:32:10 --> Cart Class Initialized
+INFO - 2023-06-05 17:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:32:18 --> Cart Class Initialized
+INFO - 2023-06-05 17:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 17:32:18 --> Cart Class Initialized
+INFO - 2023-06-05 18:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:15:44 --> Cart Class Initialized
+INFO - 2023-06-05 18:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:15:46 --> Cart Class Initialized
+INFO - 2023-06-05 18:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:15:46 --> Cart Class Initialized
+INFO - 2023-06-05 18:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:15:48 --> Cart Class Initialized
+INFO - 2023-06-05 18:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:15:53 --> Cart Class Initialized
+INFO - 2023-06-05 18:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:16:17 --> Cart Class Initialized
+INFO - 2023-06-05 18:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:16:19 --> Cart Class Initialized
+INFO - 2023-06-05 18:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:16:22 --> Cart Class Initialized
+INFO - 2023-06-05 18:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:18:21 --> Cart Class Initialized
+INFO - 2023-06-05 18:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:18:22 --> Cart Class Initialized
+INFO - 2023-06-05 18:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:18:25 --> Cart Class Initialized
+INFO - 2023-06-05 18:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:23:08 --> Cart Class Initialized
+INFO - 2023-06-05 18:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:23:10 --> Cart Class Initialized
+INFO - 2023-06-05 18:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:23:15 --> Cart Class Initialized
+INFO - 2023-06-05 18:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:23:58 --> Cart Class Initialized
+INFO - 2023-06-05 18:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:24:03 --> Cart Class Initialized
+INFO - 2023-06-05 18:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:24:05 --> Cart Class Initialized
+INFO - 2023-06-05 18:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:24:28 --> Cart Class Initialized
+INFO - 2023-06-05 18:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:29:41 --> Cart Class Initialized
+INFO - 2023-06-05 18:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:34:42 --> Cart Class Initialized
+CRITICAL - 2023-06-05 18:34:42 --> Undefined variable $producto
+in APPPATH\Views\back\carrito\productos_catalogo_view.php on line 11.
+ 1 APPPATH\Views\back\carrito\productos_catalogo_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\carrito\\productos_catalogo_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\carrito\\productos_catalogo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\carrito\\productos_catalogo_view', [], true)
+ 5 APPPATH\Controllers\Carrito_controller.php(95): view('back\\carrito\\productos_catalogo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->catalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 18:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:35:45 --> Cart Class Initialized
+CRITICAL - 2023-06-05 18:35:45 --> Undefined variable $producto
+in APPPATH\Views\back\carrito\productos_catalogo_view.php on line 11.
+ 1 APPPATH\Views\back\carrito\productos_catalogo_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\back\\carrito\\productos_catalogo_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\carrito\\productos_catalogo_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\carrito\\productos_catalogo_view', [], true)
+ 5 APPPATH\Controllers\Carrito_controller.php(95): view('back\\carrito\\productos_catalogo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->catalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 18:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:36:34 --> Cart Class Initialized
+INFO - 2023-06-05 18:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:37:38 --> Cart Class Initialized
+CRITICAL - 2023-06-05 18:37:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Carrito_controller.php on line 27.
+ 1 APPPATH\Controllers\Carrito_controller.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Carrito_controller.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->agregar('13')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 18:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:38:13 --> Cart Class Initialized
+ERROR - 2023-06-05 18:38:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':13:
+ LIMIT 1' at line 3 in C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\app\Controllers\Carrito_controller.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(934): App\Controllers\Carrito_controller->agregar('13')
+#8 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#9 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_Gonzalez_Jeremias_Ezequiel\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-05 18:38:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':13:
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `productos`
+WHERE 13 = :13:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Carrito_controller.php(24): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->agregar('13')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 18:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:40:14 --> Cart Class Initialized
+CRITICAL - 2023-06-05 18:40:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Carrito_controller.php on line 27.
+ 1 APPPATH\Controllers\Carrito_controller.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Carrito_controller.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->agregar('13')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 18:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:40:17 --> Cart Class Initialized
+INFO - 2023-06-05 18:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:40:20 --> Cart Class Initialized
+CRITICAL - 2023-06-05 18:40:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Carrito_controller.php on line 27.
+ 1 APPPATH\Controllers\Carrito_controller.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Carrito_controller.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->agregar('13')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-05 18:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:40:22 --> Cart Class Initialized
+INFO - 2023-06-05 18:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:41:20 --> Cart Class Initialized
+INFO - 2023-06-05 18:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:41:42 --> Cart Class Initialized
+INFO - 2023-06-05 18:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:41:44 --> Cart Class Initialized
+INFO - 2023-06-05 18:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:41:45 --> Cart Class Initialized
+INFO - 2023-06-05 18:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:41:47 --> Cart Class Initialized
+INFO - 2023-06-05 18:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 18:41:59 --> Cart Class Initialized
+INFO - 2023-06-05 19:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:07 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:10 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:13 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:13 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:15 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:25 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:29 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:29 --> Cart Class Initialized
+INFO - 2023-06-05 19:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-05 19:07:31 --> Cart Class Initialized

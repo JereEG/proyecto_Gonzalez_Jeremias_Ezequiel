@@ -53,17 +53,26 @@
                 <div class="col-md-6">
                     <label for="cod_categoria" class="form-label">Código de categoría</label>
                     <select name="cod_categoria" class="form-select" required="">
+                        
                         <option value="">Elegir...</option>
-                        <option value="2">1-Bebidas</option>
-                    </select>
-                    <?php if ($validation->getError('cod_categoria')) { ?>
-                        <div class='alert alert-danger mt-2'>
-                            <?= $error = $validation->getError('cod_categoria'); ?>
+                        <?php foreach ($categorias as $categoria) : ?>
+                            <?php if ( $categoria['categoria_eliminada'] == "NO") : ?>
+                            <option value="<?= $categoria['id_categoria'] ?>">
+                                <?= $categoria['id_categoria'] ?>-<?= $categoria['nombre_categoria'] ?>
+                                </option>    
+                            <?php endif ?>
+                        
+                        <?php endforeach ?>
+                        <?php if ($validation->getError('cod_categoria')) { ?>
+                            <div class='alert alert-danger mt-2'>
+                                <?= $error = $validation->getError('cod_categoria'); ?>
+                            </div>
+                        <?php } ?>
+                        <div class="invalid-feedback">
+                            Seleccione un código válido.
                         </div>
-                    <?php } ?>
-                    <div class="invalid-feedback">
-                        Seleccione un código válido.
-                    </div>
+                        
+                    </select>
                 </div>
 
                 <div class="col-sm-6">

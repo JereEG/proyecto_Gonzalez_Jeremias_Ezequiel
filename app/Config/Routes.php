@@ -35,7 +35,7 @@ $routes->get('contacto', 'Home::f_contacto');
 $routes->get('comercializacion', 'Home::f_comercializacion');
 $routes->get('sitio_en_construccion', 'Home::f_sitio_en_construccion');
 $routes->get('terminos_y_condiciones', 'Home::f_terminos_y_condiciones');
-$routes->get('catalogo', 'Home::f_catalogo');
+
 
 /**
  * Rutas del Registro de Usuarios
@@ -61,6 +61,7 @@ $routes->get('/produ-form', 'ProductoController::crearproducto');
 $routes->post('/enviar-prod', 'ProductoController::alta_producto');
 
 $routes->get('/vista_editar/(:num)', 'ProductoController::vistaEditarProducto/$1');
+
 $routes->post('/editar/(:num)', 'ProductoController::editarProducto/$1');
 
 $routes->get('/produ-eliminados', 'ProductoController::vista_productos_eliminados');
@@ -71,20 +72,34 @@ $routes->get('/produ-restaurar/(:num)', 'ProductoController::restaurarProducto/$
 
 
 
-/*
-/*$routes->get('/editar/(:num)', 'ProductoController::singleproducto/$1');
-$routes->get('/agregar', 'ProductoController::index');
-$routes->get('/crear', 'ProductoController::index');
-$routes->get('/agregar', 'ProductoController::index');
-$routes->get('/crear', 'ProductoController::index');
-*/
+/**
+ * Rutas de Categorías
+ */
+$routes->get('crud_categorias', 'CategoriasController::index');
 
+$routes->get('/categoria_form', 'CategoriasController::crearcategoria');
+
+$routes->post('/enviar_categoria', 'CategoriasController::alta_categoria');
+
+$routes->get('/vista_editar_categoria/(:num)', 'CategoriasController::vistaEditarCategoria/$1');
+
+$routes->get('/categoria_eliminados', 'CategoriasController::vista_categoria_eliminados');
+
+$routes->post('/editar_categoria/(:num)', 'CategoriasController::editarCategoria/$1');
+
+$routes->get('/eliminar_categoria/(:num)', 'CategoriasController::eliminarCategoria/$1');
+
+$routes->get('/restaurar_categoria/(:num)', 'CategoriasController::restaurarCategoria/$1');
 
 /**
  * Rutas del carrito
  */
 $routes->get('/carrito', 'Carrito_controller::ver_carrito');
-
+$routes->get('catalogo', 'Carrito_controller::catalogo');
+$routes->post('carrito_agregar/(:num)', 'Carrito_controller::agregar/$1');
+//$routes->post('carrito_agregar', 'Carrito_controller::agregar',['filter' => 'auth']);
+$routes->get('sumar_a_carrito/(:any)', 'Carrito_controller::sumar_carrito/$1');
+$routes->get('restar_a_carrito/(:any)', 'Carrito_controller::restar_carrito/$1');
 
 
 /*

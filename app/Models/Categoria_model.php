@@ -7,4 +7,9 @@ class Categoria_model extends Model
     protected $table = 'categorias';
     protected $primaryKey = 'id_categoria';
     protected $allowedFields = ['nombre_categoria', 'categoria_eliminada'];
+
+    public function getCategorias()
+    {
+        return $this->findAll();
+    }
 }

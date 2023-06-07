@@ -5,6 +5,7 @@ use App\Models\Producto_model;
 Use App\Models\Usuarios_model;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
+use App\Models\Categoria_model;
 use CodeIgniter\Controller;
 
 class ProductoController extends Controller {
@@ -21,6 +22,8 @@ class ProductoController extends Controller {
         $productoModel = new Producto_model();
 
         $data['productos'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
+        $categoriaModel = new Categoria_model();
+        $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
 
         $data['titulo'] = 'Crud_productos';
         echo view('front\head_view', $data);
@@ -31,7 +34,8 @@ class ProductoController extends Controller {
     public function vista_productos_eliminados() {
         $productoModel = new Producto_model();
         $data['productos'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
-        
+        //$categoriaModel = new Categoria_model();
+        //$data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
         $data['titulo'] = 'Productos Eliminados';
 
         echo view('front\head_view', $data);
@@ -42,13 +46,15 @@ class ProductoController extends Controller {
 
     public function crearproducto() {
         $productoModel = new Producto_model();
-        $lista_productos['obj'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
+        $data['obj'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
+        
+        $categoriaModel = new Categoria_model();
+        $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
         
         $data['titulo'] = 'Alta producto';
-
         echo view('front\head_view', $data);
         echo view('front\nav_view');
-        echo view('back\productos\alta_producto_view', $lista_productos);
+        echo view('back\productos\alta_producto_view', $data);
         echo view('front\footer_view.php');
     }
     public function vistaEditarProducto($id = null) {
@@ -56,7 +62,8 @@ class ProductoController extends Controller {
         $productoModel = new Producto_model();
         
         $data['titulo'] = 'Editar producto';
-
+        $categoriaModel = new Categoria_model();
+        $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
         //$id= $this->request->getPostGet('id');
         //$data['producto'] = $productoModel->where('id', $id)->first();
         $data['old'] = $productoModel->where('id_producto', $id)->first();
@@ -102,6 +109,12 @@ class ProductoController extends Controller {
                     'required' => 'A {field} debes colocar una descripción de al menos 3 letras.',
                 ],
             ],
+            'cod_categoria' => [
+                'rules'  => 'required|min_length[1]',
+                'errors' => [
+                    'required' => 'A {field} debes colocar una descripción de al menos 3 letras.',
+                ],
+            ],
         
             'precio'=> [
                 'rules'  => 'required',
@@ -128,6 +141,9 @@ class ProductoController extends Controller {
                     'required' => 'A {field} debes colocar el stock mínimo.',
                 ],
             ],
+            /*Error de validación de codeIgniter Visto por el profesor Ivan Sambrana
+            https://forum.codeigniter.com/showthread.php?tid=86535&page=2
+            */
             'imagen' => [
                 'rules'  => 'is_image[imagen]',
                 'errors' => [
@@ -171,12 +187,16 @@ class ProductoController extends Controller {
 
         } else {
             /***Se muestran los errores */
+            $categoriaModel = new Categoria_model();
+            $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
+            
             
             $dato['titulo'] = 'Error en Alta de producto';
             echo view('front/head_view', $dato);
             echo view('front/nav_view');
             echo view('back/productos/alta_producto_view', [
-                'validation' => $this->validator
+                'validation' => $this->validator,
+                'categorias' => $data['categorias'],
             ]);
             /*if ($this->request->getVar('imagen') == NULL) {
                 echo '<script language="javascript">alert("No se cargo la imagen");</script>'; # code...
@@ -189,7 +209,7 @@ class ProductoController extends Controller {
 
     public function editarProducto($id = null) {
         /**Si tiene un nombre quiere decir que se debe agregar la regla para la imagen también */
-         helper(['url', 'form', 'html', 'date']);
+         helper(['url', 'form', 'html']);
      
             $rules = [
             'nombre-prod' => [
@@ -228,7 +248,9 @@ class ProductoController extends Controller {
         ];
 
         
-       if (!($this->request->getFile('imagen')->getName() === "")) { 
+       /*Error de validación de codeIgniter Visto por el profesor Ivan Sambrana
+       https://forum.codeigniter.com/showthread.php?tid=86535&page=2
+       *if (!($this->request->getFile('imagen')->getName() === "")) { 
             $rules['imagen'] = [
                 'rules'  => 'is_image[imagen]',
                 'errors' => [
@@ -236,10 +258,12 @@ class ProductoController extends Controller {
                     'is_image[imagen]' => 'A {field} debe ser una imagen.',
                 ],
                 ];
-        }
+        }**/
         
         $producto = new Producto_model();
         //var_dump($rules);
+        $this->validate($rules);
+       
         //exit();
         if ($this->validate($rules)) {
 
@@ -251,6 +275,7 @@ class ProductoController extends Controller {
                 //exit();       
                 
 
+                
                 $img = $this->request->getFile('imagen');
                 $nombre_aleatorio = $img->getRandomName();
                 $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
@@ -295,6 +320,8 @@ class ProductoController extends Controller {
             //$producto = new Producto_model();
             //$dato['validation'] = $this->validator;
             //$data['old'] = $producto->where('id_producto', $id)->first();
+            $categoriaModel = new Categoria_model();
+            //$data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
             
             $dato['titulo'] = 'Editar producto';
             echo view('front/head_view', $dato);
@@ -302,7 +329,10 @@ class ProductoController extends Controller {
             echo view('back/productos/editar_producto_view',[
                 'validation' => $this->validator,
                 'old' => $producto->where('id_producto', $id)->first(),
+                'categorias' => $categoriaModel->orderBy('id_categoria', 'DESC')->findAll(),
             ]);
+            echo view('front\footer_view.php');
+
             /*if ($this->request->getVar('imagen') == NULL) {
                 echo '<script language="javascript">alert("No se cargo la imagen");</script>'; # code...
             }*/
