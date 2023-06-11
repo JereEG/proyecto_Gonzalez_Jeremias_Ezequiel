@@ -100,6 +100,12 @@ $routes->post('carrito_agregar/(:num)', 'Carrito_controller::agregar/$1');
 //$routes->post('carrito_agregar', 'Carrito_controller::agregar',['filter' => 'auth']);
 $routes->get('sumar_a_carrito/(:any)', 'Carrito_controller::sumar_carrito/$1');
 $routes->get('restar_a_carrito/(:any)', 'Carrito_controller::restar_carrito/$1');
+$routes->get('remover_producto/(:any)', 'Carrito_controller::remover_producto/$1');
+
+$routes->get('finalizar_compra', 'Carrito_controller::guardar_compra');
+
+
+$routes->get('eliminar_carrito', 'Carrito_controller::eliminar_carrito');
 
 
 /*

@@ -4,6 +4,9 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 
 use App\Models\Producto_model;
+use App\Models\Usuarios_model;
+use App\Models\VentasCabecera_model;
+use App\Models\VentasDetalle_model;
 
 class Carrito_controller extends Controller {
     public function __construct()
@@ -37,8 +40,12 @@ class Carrito_controller extends Controller {
     }
     public function sumar_carrito($id = null){
         $cart = \Config\Services::cart();
-
         $producto = new Producto_model();
+        $session = session();
+        //$cart = \Config\Services::cart();
+
+        //dd($_SESSION['logged_in']);
+        //dd($_SESSION['id_usuario']);
         $id_producto = $cart->getItem($id)["id"];
         $producto = $producto->where('id_producto', $id_producto)->first();
 
@@ -124,4 +131,119 @@ class Carrito_controller extends Controller {
         echo view('front\footer_view.php');
 	
 	}
+     public function borrar_carrito()
+    {
+        $cart = \Config\Services::cart();//para que incluya el $cart
+        $cart->destroy();
+
+        return redirect()->back()->withInput();
+        //return redirect()->to(base_url('carrito_compra'));
+
+    }
+
+    public function eliminar_carrito(){
+        $cart = \Config\Services::cart();
+        $session = session();
+
+        $cart->destroy();
+        $session->set('cart', 0);
+
+        return redirect()->to(base_url('catalogo'));
+    }
+
+    public function remover_producto($rowid) {
+   
+         $cart = \Config\Services::Cart();
+         $request = \Config\Services::request();
+        //Si $rowid es "all" destruye el carrito
+        if ($rowid==="all")
+        {
+         $cart->destroy();
+        }
+        else //Sino destruye sola fila seleccionada
+        { 
+            $cart->remove($rowid);
+        }
+        // Redirige a la misma página que se encuentra
+        return redirect()->back()->withInput();
+    }
+
+
+    public function guardar_compra()
+	{
+        /**$datos trae 
+         * Para poder guardar correctamente la compra, primero
+         * se debe tener el usuario para asociarlo a la cabecera de la compra,
+         * luego se requiere un producto para asociarlo a la venta detalle 
+         * que sera asociado con la cabecera de la compra
+         * 
+         */
+        $session = session();
+        $cart = \Config\Services::cart();
+        $cart = $cart->contents();
+
+		//$session_data = $this->$session->userdata('logged_in');
+		//$data['id'] = $session_data['id'];
+        //$productoModel->where('id_producto', $id)->first();
+        //dd($_SESSION['logged_in']);
+        //dd($_SESSION['id_usuario']);
+
+        //$usuario = new Usuarios_model();
+        $venta_detalle = new VentasDetalle_model();
+        $venta_cabecera = new VentasCabecera_model();
+        $producto = new Producto_model();
+
+        //trae el producto correspondiente con la id
+        //$producto = $producto->where('id_producto', $datos['producto']->id_producto)->first();
+        
+
+		$total = 0;
+        //calcula el total de la compra elegí esta opción ya que me pareció la mas segura
+        //dd($cart);
+        foreach ($cart as $item):
+            $total += floatval($item['subtotal']);
+        endforeach;
+       
+
+		$venta = array(
+			'fecha' 		=> date('Y-m-d'),
+			'usuario_id' 	=> $_SESSION['id_usuario'],
+			'total_ventas'	=> $total,
+		);
+		//$venta_id = $this->carrito_model->insert_venta($venta);
+        $cabecera_id = $venta_cabecera->insert($venta);
+
+		
+			foreach ($cart as $item):
+				$v_venta_detalle = array(
+					'venta_id' 		=> $cabecera_id,
+					'producto_id' 	=> $item['id'],
+					'cantidad' 		=> $item['qty'],
+					'precio' 		=> $item['price'],
+				);
+
+            	$venta_detalle->insert($v_venta_detalle);
+
+            	//Descuenta del stock y lo guarda en la base de datos
+                //$stock_actual = $item|['qty'];
+            	$producto->sacar_del_stock($item['id'], $item['qty']);
+
+			endforeach;
+	
+		$data = array('titulo' => 'Compra Finalizada');
+
+		$data['perfil_id'] = $_SESSION['id_usuario'];
+		$data['nombre'] = $_SESSION['nombre'];
+
+        echo view('front\head_view', $data);
+        echo view('front\nav_view');
+        echo view('back\carrito\compra_finalizada_view', $data);
+        echo view('front\footer_view.php');
+	
+
+		//$final = $this->cart->destroy();
+        $this->borrar_carrito();
+
+	}
+
 }

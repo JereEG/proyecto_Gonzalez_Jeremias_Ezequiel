@@ -47,6 +47,7 @@
                     echo  form_hidden('cart[' . $item['id'] . '][name]', $item['name']);
                     echo  form_hidden('cart[' . $item['id'] . '][price]', $item['price']);
                     echo  form_hidden('cart[' . $item['id'] .'][qty]', $item['qty']);
+    
                 ?>
                 <tr>
                             <td>
@@ -79,7 +80,7 @@
                             </td>
                             <td>
 
-                                <a class="btn btn-danger" href="">
+                                <a class="btn btn-danger" href="<?php echo base_url();?>remover_producto/<?php echo $item['rowid'];?>">
                                     Eliminar
                                     <img class="img-fluid" src="<?php echo base_url('assets/img/trash-fill.svg')?>"
                                         class="bi" width="24" height="24">
@@ -97,12 +98,18 @@
                         </td>
                         <td colspan="5">
                             <!-- Borrar carrito usa mensaje de confirmacion javascript implementado en head_view -->
-                            <input type="button" class='btn btn-danger btn-lg' value="Borrar Carrito" onclick="window.location = 'borrar'">
+                            <!--<input type="button" class='btn btn-danger btn-lg' value="Borrar Carrito" onclick="window.location = 'borrar'">-->
+                            <a class="btn btn-danger btn-lg" href="<?php echo base_url('eliminar_carrito')?>">
+                                Borrar Carrito
+                            </a>
                             <!-- Submit boton. Actualiza los datos en el carrito -->
                             <!--input type="submit" class ='btn btn-primary btn-lg' value="Actualizar"-->
                             <!-- " Confirmar orden envia a carrito_controller/muestra_compra  -->
-                            <input type="button" class='btn btn-primary btn-lg' value="Comprar"
-                                onclick="window.location = 'carrito-comprar'">
+                            <a class="btn btn-primary btn-lg" href="<?php echo base_url('finalizar_compra')?>">
+                                Comprar
+                            </a>
+                            <!--<input type="button" class='btn btn-primary btn-lg' value="Comprar"
+                                onclick="window.location = 'carrito-comprar'">-->
                         </td>
                     </tr>
                     <?php echo form_close();

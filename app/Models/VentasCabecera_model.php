@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Producto_model extends Model
+class VentasCabecera_model extends Model
 {
-    protected $table = 'productos';
-    protected $primaryKey = 'id_producto';
+    protected $table = 'ventas_cabecera';
+    protected $primaryKey = 'id_ventas_cabecera';
 
-    protected $allowedFields = ['descripcion_prod', 'imagen', 'cod_categoria', 'precio', 'precio_venta', 'stock', 'stock_min', 'eliminado'];
+    protected $allowedFields = ['fecha', 'usuario_id', 'total_ventas'];
 
     /*function get_ventas_cabecera() {
         /**
@@ -33,18 +33,4 @@ class Producto_model extends Model
             return FALSE;
         }
     }*/
-    public function sacar_del_stock($id, $cantidad_que_saco) {
-        $producto = new Producto_model();
-
-        $producto->find($id)['stock'] - $cantidad_que_saco;
-        /*
-        $data = [
-
-            'stock' => $nuevo_stock,
-            
-        ];
-
-        $producto->update($id, $data);
-        */
-    }
 }

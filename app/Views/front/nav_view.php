@@ -66,7 +66,7 @@ $perfil = $session->get('perfil_id');
 
                         <li class="nav-item p-2 m-3">
                             <a class="btn btn-danger" href="<?php echo base_url('cerrar-login'); ?>">
-                                <h5>Cerrar sección</h5>
+                                <h5>Cerrar sesión</h5>
                             </a>
                         </li>
                         <!--NAVBAR PARA El ADMINISTRADOR-->
@@ -105,7 +105,7 @@ $perfil = $session->get('perfil_id');
 
                         <li class="nav-item p-2 m-3">
                             <a class="btn btn-danger" href="<?php echo base_url('cerrar-login'); ?>">
-                                <h5>Cerrar sección</h5>
+                                <h5>Cerrar sesión</h5>
                             </a>
                         </li>
 
