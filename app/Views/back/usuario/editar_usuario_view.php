@@ -76,6 +76,31 @@
                         </div>
                         <?php } ?>
                     </div>
+
+                    <div class="col-md-6">
+                        <label for="cod_tipo_usuario" class="form-label">Tipo de usuario</label>
+                        <select required name="cod_tipo_usuario" class="form-select">
+                    
+                            <option value="">Elegir...</option>
+                            <?php foreach ($perfiles as $perfil) : ?>
+                            <?php if ( $perfil['perfil_eliminado'] == "NO") : ?>
+                            <option value="<?= $perfil['id_perfil'] ?>">
+                                <?= $perfil['id_perfil'] ?>-
+                                <?= $perfil['descripcion'] ?>
+                            </option>
+                            <?php endif ?>
+                    
+                            <?php endforeach ?>
+                            <?php if ($validation->getError('cod_tipo_usuario')) { ?>
+                            <div class='alert alert-danger mt-2'>
+                                <?= $error = $validation->getError('cod_tipo_usuario'); ?>
+                            </div>
+                            <?php } ?>
+
+                    
+                        </select>
+                    </div>
+
     
     
                 </div>

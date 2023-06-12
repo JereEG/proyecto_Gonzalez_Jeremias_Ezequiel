@@ -96,8 +96,8 @@ class Usuario_controller extends Controller {
     $v_usuarios_model = new Usuarios_model();
     $data['usuario'] = $v_usuarios_model->where('id_usuario', $id)->first();
 
-    //$v_perfiles_model = new Perfiles_model();
-    //$data['perfiles'] = $v_perfiles_model->findAll();
+    $v_perfiles_model = new Perfiles_model();
+    $data['perfiles'] = $v_perfiles_model->findAll();
 
     echo view('front\head_view', $data);
     echo view('front\nav_view');
@@ -118,6 +118,10 @@ class Usuario_controller extends Controller {
 
     $formModel = new Usuarios_model();
 
+    $v_perfiles_model = new Perfiles_model();
+    //$data['perfiles'] = $v_perfiles_model->findAll();
+
+
     if (!$input) {
       $data['titulo'] = 'Error en editar usuario';
       echo view('front/head_view', $data);
@@ -125,6 +129,7 @@ class Usuario_controller extends Controller {
       //echo view('back/usuario/registrarse', ['validation' => $this->validator]);
       echo view('back/usuario/editar_usuario_view', ['validation' => $this->validator,
         'usuario' => $formModel->where('id_usuario', $id)->first(),
+        'perfiles' => $v_perfiles_model->findAll(),
 
       ]);
       echo view('front/footer_view');
@@ -135,6 +140,7 @@ class Usuario_controller extends Controller {
         'apellido' => $this->request->getVar('apellido'),
         'usuario' => $this->request->getVar('usuario'),
         'email' => $this->request->getVar('email'),
+        'perfil_id' => $this->request->getVar('cod_tipo_usuario'),
       ]);
 
       
