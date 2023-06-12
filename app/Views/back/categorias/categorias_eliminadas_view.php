@@ -41,9 +41,10 @@
                                     </a>
                             </td>
                             <td>
-                                 <a href="<?php echo base_url();?>eliminar_categoria/<?php echo $categoria['id_categoria'];?>" class="btn btn-danger">
-                                    <img class="img-fluid" src="assets\img\trash-fill.svg" class="bi" width="24" height="24">
-                                </a>                               
+                                 
+                                <a href="<?php echo base_url(); ?>eliminar_categoria/<?php echo $categoria['id_categoria']; ?>" class="btn btn-danger">
+                                            Restaurar
+                                </a>
                             </td>
                         <?php endif ?>
                         </tr>

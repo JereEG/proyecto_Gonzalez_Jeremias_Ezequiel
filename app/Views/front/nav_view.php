@@ -73,7 +73,7 @@ $perfil = $session->get('perfil_id');
                     <?php elseif (session()->perfil_id == "1") : ?>
                         
                         <li class="nav-item p-2 m-3">
-                            <a class="nav-link" href="<?php echo base_url('/'); ?>">
+                            <a class="nav-link" href="<?php echo base_url('crud_usuarios'); ?>">
                                 <h5>CRUD Usuarios</h5>
                             </a>
                         </li>

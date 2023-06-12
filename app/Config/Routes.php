@@ -52,6 +52,21 @@ $routes->post('/enviar-form-login', 'Login_controller::auth');
 $routes->get('/cerrar-login', 'Login_controller::logout');
 //$routes->get('/principal', 'Home::prueba');
 
+
+/**
+ * Rutas del crud de usuarios
+ */
+$routes->get('crud_usuarios', 'Usuario_controller::cargar_crud');
+$routes->get('ver_usuarios_eliminados', 'Usuario_controller::ver_eliminados');
+
+$routes->get('/ver_editar_usuario/(:num)', 'Usuario_controller::ver_editarUsuario/$1');
+
+$routes->post('/editar_usuario/(:num)', 'Usuario_controller::editarUsuario/$1');
+
+$routes->get('/eliminar_usuario/(:num)', 'Usuario_controller::eliminarUsuario/$1');
+
+$routes->get('/restaurar_usuario/(:num)', 'Usuario_controller::restaurarUsuario/$1');
+
 /**
  * Rutas de Productos
  */

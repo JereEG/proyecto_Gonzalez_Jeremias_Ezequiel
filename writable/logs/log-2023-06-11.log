@@ -328,3 +328,304 @@ INFO - 2023-06-11 01:33:45 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-06-11 01:33:45 --> Cart Class Initialized
 INFO - 2023-06-11 01:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-11 01:35:01 --> Cart Class Initialized
+INFO - 2023-06-11 01:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:42:18 --> Cart Class Initialized
+INFO - 2023-06-11 01:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:42:36 --> Cart Class Initialized
+INFO - 2023-06-11 01:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:44:30 --> Cart Class Initialized
+INFO - 2023-06-11 01:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:45:28 --> Cart Class Initialized
+INFO - 2023-06-11 01:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:06 --> Cart Class Initialized
+INFO - 2023-06-11 01:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:19 --> Cart Class Initialized
+INFO - 2023-06-11 01:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:22 --> Cart Class Initialized
+INFO - 2023-06-11 01:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:22 --> Cart Class Initialized
+INFO - 2023-06-11 01:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:24 --> Cart Class Initialized
+INFO - 2023-06-11 01:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:47:25 --> Cart Class Initialized
+INFO - 2023-06-11 01:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:50:55 --> Cart Class Initialized
+INFO - 2023-06-11 01:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 01:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:05 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:07 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:08 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:09 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:10 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:12 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:12 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:15 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:15 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:17 --> Cart Class Initialized
+INFO - 2023-06-11 02:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:20:18 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:02 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:04 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:04 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:06 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:06 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:08 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:09 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:12 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:13 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:14 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:28 --> Cart Class Initialized
+INFO - 2023-06-11 02:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 02:21:34 --> Cart Class Initialized
+INFO - 2023-06-11 03:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:29:47 --> Cart Class Initialized
+CRITICAL - 2023-06-11 03:29:48 --> Unsupported operand types: string + string
+in APPPATH\Controllers\Carrito_controller.php on line 236.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 03:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:08 --> Cart Class Initialized
+INFO - 2023-06-11 03:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:11 --> Cart Class Initialized
+CRITICAL - 2023-06-11 03:30:11 --> Unsupported operand types: string + string
+in APPPATH\Controllers\Carrito_controller.php on line 236.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 03:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:25 --> Cart Class Initialized
+INFO - 2023-06-11 03:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:27 --> Cart Class Initialized
+INFO - 2023-06-11 03:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:30 --> Cart Class Initialized
+INFO - 2023-06-11 03:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:30 --> Cart Class Initialized
+INFO - 2023-06-11 03:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:31 --> Cart Class Initialized
+INFO - 2023-06-11 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:30:33 --> Cart Class Initialized
+CRITICAL - 2023-06-11 03:30:33 --> Unsupported operand types: string + string
+in APPPATH\Controllers\Carrito_controller.php on line 236.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 03:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:31:24 --> Cart Class Initialized
+INFO - 2023-06-11 03:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:31:26 --> Cart Class Initialized
+INFO - 2023-06-11 03:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:31:35 --> Cart Class Initialized
+INFO - 2023-06-11 03:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:31:40 --> Cart Class Initialized
+INFO - 2023-06-11 03:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 03:33:22 --> Cart Class Initialized
+CRITICAL - 2023-06-11 03:33:22 --> Undefined array key "id_usuario"
+in APPPATH\Controllers\Carrito_controller.php on line 210.
+ 1 APPPATH\Controllers\Carrito_controller.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_usuario"', 'APPPATH\\Controllers\\Carrito_controller.php', 210)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 04:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:09:47 --> Cart Class Initialized
+INFO - 2023-06-11 04:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:10:52 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:04 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:09 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:11 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:12 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:16 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:16 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:19 --> Cart Class Initialized
+INFO - 2023-06-11 04:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:11:21 --> Cart Class Initialized
+CRITICAL - 2023-06-11 04:11:21 --> Undefined array key "producto"
+in APPPATH\Views\back\carrito\compra_finalizada_view.php on line 34.
+ 1 APPPATH\Views\back\carrito\compra_finalizada_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "producto"', 'APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\carrito\\compra_finalizada_view', [], true)
+ 5 APPPATH\Controllers\Carrito_controller.php(246): view('back\\carrito\\compra_finalizada_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 04:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:12:05 --> Cart Class Initialized
+CRITICAL - 2023-06-11 04:12:05 --> Undefined array key "producto_id"
+in APPPATH\Views\back\carrito\compra_finalizada_view.php on line 34.
+ 1 APPPATH\Views\back\carrito\compra_finalizada_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "producto_id"', 'APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\carrito\\compra_finalizada_view', [], true)
+ 5 APPPATH\Controllers\Carrito_controller.php(246): view('back\\carrito\\compra_finalizada_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 04:14:43 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Carrito_controller.php on line 237.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Carrito_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Carrito_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Carrito_controller')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Carrito_controller', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 04:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:14:57 --> Cart Class Initialized
+CRITICAL - 2023-06-11 04:14:57 --> Undefined array key "usuario_id"
+in APPPATH\Views\back\carrito\compra_finalizada_view.php on line 34.
+ 1 APPPATH\Views\back\carrito\compra_finalizada_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario_id"', 'APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\carrito\\compra_finalizada_view', [], true)
+ 5 APPPATH\Controllers\Carrito_controller.php(246): view('back\\carrito\\compra_finalizada_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 04:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:15:46 --> Cart Class Initialized
+CRITICAL - 2023-06-11 04:15:46 --> Undefined array key "producto"
+in APPPATH\Views\back\carrito\compra_finalizada_view.php on line 35.
+ 1 APPPATH\Views\back\carrito\compra_finalizada_view.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "producto"', 'APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\carrito\\compra_finalizada_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\carrito\\compra_finalizada_view', [], true)
+ 5 APPPATH\Controllers\Carrito_controller.php(246): view('back\\carrito\\compra_finalizada_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Carrito_controller->guardar_compra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 04:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:16:18 --> Cart Class Initialized
+INFO - 2023-06-11 04:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:16:37 --> Cart Class Initialized
+INFO - 2023-06-11 04:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:18:38 --> Cart Class Initialized
+INFO - 2023-06-11 04:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:18:42 --> Cart Class Initialized
+INFO - 2023-06-11 04:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:19:37 --> Cart Class Initialized
+INFO - 2023-06-11 04:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:19:49 --> Cart Class Initialized
+INFO - 2023-06-11 04:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 04:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 16:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-11 22:21:21 --> Undefined array key "id_categoria"
+in APPPATH\Views\back\usuario\usuarios_view.php on line 59.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_categoria"', 'APPPATH\\Views\\back\\usuario\\usuarios_view.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\usuario\\usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(70): view('back\\usuario\\usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->cargar_crud()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 22:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-11 22:33:34 --> Undefined array key "tipo_perfil"
+in APPPATH\Views\back\usuario\usuarios_view.php on line 65.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo_perfil"', 'APPPATH\\Views\\back\\usuario\\usuarios_view.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\usuario\\usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(73): view('back\\usuario\\usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->cargar_crud()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 22:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-11 22:36:01 --> Undefined array key "tipo_perfil"
+in APPPATH\Views\back\usuario\usuarios_view.php on line 65.
+ 1 APPPATH\Views\back\usuario\usuarios_view.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo_perfil"', 'APPPATH\\Views\\back\\usuario\\usuarios_view.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\back\\usuario\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('back\\usuario\\usuarios_view', [], true)
+ 5 APPPATH\Controllers\Usuario_controller.php(73): view('back\\usuario\\usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario_controller->cargar_crud()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-11 22:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 22:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 23:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 23:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 23:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-11 23:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

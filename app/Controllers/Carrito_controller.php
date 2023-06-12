@@ -229,12 +229,18 @@ class Carrito_controller extends Controller {
             	$producto->sacar_del_stock($item['id'], $item['qty']);
 
 			endforeach;
-	
-		$data = array('titulo' => 'Compra Finalizada');
+
+        //$data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
+		$data = array('titulo' => 'Compra Finalizada',
+            'cabecera_id_front' => $cabecera_id,
+            'ventas_detalle' => $venta_detalle->where('venta_id', $cabecera_id)->findAll(),
+            'productos' => $producto->orderBy('id_producto', 'DESC')->findAll(),
+            'total' => $total,
+        );
 
 		$data['perfil_id'] = $_SESSION['id_usuario'];
-		$data['nombre'] = $_SESSION['nombre'];
-
+		$data['nombre_apellido'] = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
+        $data['cabecera_id'] = $cabecera_id;
         echo view('front\head_view', $data);
         echo view('front\nav_view');
         echo view('back\carrito\compra_finalizada_view', $data);

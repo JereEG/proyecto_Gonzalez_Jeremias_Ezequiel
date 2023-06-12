@@ -1,7 +1,7 @@
 <div class="container-fluid justify-content-center">
 
     <div class="text-center">
-        <h4>CRUD de Usuarios</h4>
+        <h4>Usuarios eliminados</h4>
     </div>
     <div class="text-center p-2">
 
@@ -9,7 +9,7 @@
             onclick="location.href='<?php echo base_url('registro'); ?>'">Agregar
             nueva Usuario</button>
         <button class="w-25 btn btn-primary btn-sm"
-            onclick="location.href='<?php echo base_url('ver_usuarios_eliminados'); ?>'">Ver Usuario eliminados</button>
+            onclick="location.href='<?php echo base_url('categoria_eliminados'); ?>'">Ver Usuario eliminadas</button>
 
     </div>
 
@@ -45,7 +45,7 @@
                 </tr>
                 <?php foreach ($usuarios as $usuario): ?>
                 <tr>
-                    <?php if ($usuario['baja'] == "NO"): ?>
+                    <?php if ($usuario['baja'] == "SI"): ?>
                     <td>
                         <?= $usuario['id_usuario'] ?>
                     </td>
@@ -72,15 +72,14 @@
                         <?= $usuario['baja'] ?>
                     </td>
                     <td>
-                        <a href="<?php echo base_url(); ?>ver_editar_usuario/<?php echo $usuario['id_usuario']; ?>"
+                        <a href="<?php echo base_url(); ?>vista_editar_usuario/<?php echo $usuario['id_usuario']; ?>"
                             class="btn btn-primary">
                             <img class="img-fluid" src="assets\img\pencil-square.svg" class="bi" width="24" height="24">
                         </a>
                     </td>
                     <td>
-                        <a href="<?php echo base_url(); ?>eliminar_usuario/<?php echo $usuario['id_usuario']; ?>"
-                            class="btn btn-danger">
-                            <img class="img-fluid" src="assets\img\trash-fill.svg" class="bi" width="24" height="24">
+                        <a href="<?php echo base_url(); ?>restaurar_usuario/<?php echo $usuario['id_usuario']; ?>" class="btn btn-danger">
+                                    Restaurar
                         </a>
                     </td>
                     <?php endif ?>
