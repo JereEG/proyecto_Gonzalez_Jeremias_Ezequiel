@@ -95,7 +95,7 @@ $perfil = $session->get('perfil_id');
                         </li>
                         
                             <li class="nav-item p-2 m-3">
-                                <a class="nav-link" href="<?php echo base_url('/'); ?>">
+                                <a class="nav-link" href="<?php echo base_url('/listar_ventas'); ?>">
                                 <h5>Mostrar Ventas</h5>
                             </a>
                         </li>
