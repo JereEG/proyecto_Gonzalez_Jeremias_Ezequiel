@@ -19,19 +19,19 @@
                 <ul class="nav flex-column">
                     <p>
                         <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
-                            Síguenos en Facebook <img class="img-fluid" src="assets\img\facebook.png"
+                            Síguenos en Facebook <img class="img-fluid" src="<?php echo base_url('assets/img/facebook.png')?>"
                                 style="color:#3b5998" class="bi" width="24" height="24">
                         </a>
                     </p>
                     <p>
                         <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
-                            Síguenos en Instagram <img class="img-fluid" src="assets\img\instagram.png" class="bi"
+                            Síguenos en Instagram <img class="img-fluid" src="<?php echo base_url('assets/img/instagram.png')?>" class="bi"
                                 width="24" height="24">
                         </a>
                     </p>
                     <p>
                         <a href="<?php echo base_url('sitio_en_construccion');?>" class="text-decoration-none">
-                            Síguenos en Twitter <img class="img-fluid" src="assets\img\twitter.png"
+                            Síguenos en Twitter <img class="img-fluid" src="<?php echo base_url('assets/img/twitter.png')?>"
                                 style="color:#00acee" class="bi" width="24" height="24">
                         </a>
                     </p>
