@@ -1,8 +1,9 @@
-<div>
+<div class="container-fluid d-flex justify-content-center">
   <!--recuperamos datos con la función Flashdata para mostrarlos-->
   <?php if (session()->getFlashdata('success')) : ?>
-    <div class='alert alert-success alert-dismissible fade show' role='alert'>
-      <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>" . session()->getFlashdata('success') . "
+    <div class='text-center w-50 alert alert-success alert-dismissible fade show' role='alert'>
+      <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+      <?= session()->getFlashdata('success') ?>
   </div>
   <?php endif ?>
   
@@ -13,7 +14,7 @@
 
 
 <div class="container-fluid mt-1 mb-1 d-flex justify-content-center">
-  <div class="col-md-7  col-lg-8">
+  <div class="card p-4 col-md-7  col-lg-8">
 
     <h4 class="mb-3">Ingresar usuario</h4>
     <!-- envio de datos a la ruta /enviar-login ******* -->

@@ -13,17 +13,13 @@ class Auth implements FilterInterface
         //dd(!$_SESSION['perfil_id'] == "1");
         if(!$session->get('logged_in')) {
             //entonces redirectiona la pagina de iniciar sesión
-            return redirect()->to('ingreso')->with('msg', [
-                'type' => 'warning',
-                'body' => 'Debes iniciar sesión para acceder a esta página.'
-            ]);
+            $session->setFlashdata('success', 'Debes iniciar sesión.');
+            return redirect()->to('ingreso');
         }
         //dd($_SESSION['perfil_id'] != "1");
         if ($_SESSION['perfil_id'] != "1") {
-            return redirect()->to('')->with('msg', [
-                'type' => 'warning',
-                'body' => 'No tienes los permisos para acceder a esa funcionalidad.'
-            ]);
+            $session->setFlashdata('success', 'No tienes los permisos.');
+            return redirect()->to('');
         }
     }
     //-----------------------------------------
