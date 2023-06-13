@@ -121,6 +121,19 @@ $routes->get('finalizar_compra', 'Carrito_controller::guardar_compra');
 
 
 $routes->get('eliminar_carrito', 'Carrito_controller::eliminar_carrito');
+/**
+ * Rutas de las consultas
+ */
+//la carga se encarga $routes->get('contacto', 'Home::f_contacto');
+
+$routes->get('consultas_view', 'Consulta_controller::ver_consultas');
+$routes->get('ver_consultas_respondidas', 'Consulta_controller::ver_consultas_respondidas');
+
+$routes->post('enviar_consulta', 'Consulta_controller::formValidation');
+
+$routes->get('/responder_consulta/(:num)', 'Consulta_controller::responderConsulta/$1');
+
+$routes->get('/restaurar_consulta/(:num)', 'Consulta_controller::restaurarConsulta/$1');
 
 
 /*
