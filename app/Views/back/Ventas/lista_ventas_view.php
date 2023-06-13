@@ -9,12 +9,16 @@
         <!--recuperamos datos con la función Flashdata para mostrarlos-->
         <?= csrf_field(); ?>
 
-        <?php if (session()->getFlashdata('success')) {
-            echo "
-      <div class='mt-3 mb-3 ms-3 me-3 h4 text-center alert alert-success alert-dismissible'>
-      <button type='button' class='btn-close' data-bs-dismiss='alert'></button>" . session()->getFlashdata('success') . "
-        </div>";
-        } ?>
+        <div class="container-fluid d-flex justify-content-center">
+            <!--recuperamos datos con la función Flashdata para mostrarlos-->
+            <?php if (session()->getFlashdata('success')) : ?>
+                <div class='text-center w-50 alert alert-success alert-dismissible fade show' role='alert'>
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                <?= session()->getFlashdata('success') ?>
+            </div>
+            <?php endif ?>
+  
+        </div>
     </div>
 
     <?php $validation = \Config\Services::validation(); ?>

@@ -8,6 +8,9 @@ use App\Models\Usuarios_model;
 use App\Models\VentasCabecera_model;
 use App\Models\VentasDetalle_model;
 
+/***
+ * No se usa este controlador
+ */
 class Facturas_controller extends Controller {
     public function __construct()
     {

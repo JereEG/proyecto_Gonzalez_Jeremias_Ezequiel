@@ -110,7 +110,7 @@ $routes->get('/restaurar_categoria/(:num)', 'CategoriasController::restaurarCate
  * Rutas del carrito
  */
 $routes->get('/carrito', 'Carrito_controller::ver_carrito', ['filter' => 'auth']);
-$routes->get('catalogo', 'Carrito_controller::catalogo', ['filter' => 'auth']);
+$routes->get('catalogo', 'Carrito_controller::catalogo');
 $routes->post('carrito_agregar/(:num)', 'Carrito_controller::agregar/$1', ['filter' => 'auth']);
 //$routes->post('carrito_agregar', 'Carrito_controller::agregar',['filter' => 'auth']);
 $routes->get('sumar_a_carrito/(:any)', 'Carrito_controller::sumar_carrito/$1', ['filter' => 'auth']);

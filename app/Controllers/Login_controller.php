@@ -9,7 +9,8 @@ class Login_controller extends Controller{
     /** Login */
     public function ingreso() {
         helper(['form', 'url', 'html']);
-
+        //$session = session();
+        //$session->setFlashdata('success', 'Bienvenido!');
          $dato['titulo']='Ingreso'; 
          echo view('front/head_view',$dato);
          echo view('front/nav_view');
@@ -30,8 +31,8 @@ class Login_controller extends Controller{
             $pass = $data['pass'];
             $ba = $data['baja'];
             if($ba == 'SI') {
-                $session->setFlashdata('msg', 'usuario dado de baja');
-                return redirect()->to('/');
+                $session->setFlashdata('success', 'Usuario dado de baja');
+                return redirect()->to('/ingreso');
             }
             //se verifica los datos ingresados para iniciar, si cumple la verificación inicia la sesión
             $verify_pass = password_verify($contrasena, $pass);
@@ -51,17 +52,17 @@ class Login_controller extends Controller{
                 //Si se cumple la verificación inicia la sesión
                 $session->set($ses_data);
 
-                session()->setFlashdata('msg', 'Bienvenido!');
+                session()->setFlashdata('success', 'Bienvenido!');
                 return redirect()->to('/');
             } else {
                 //no paso la validación de la password 
-                $session->setFlashdata('msg', 'Contraseña Incorrecta');
-                return redirect()->to('/');
+                $session->setFlashdata('success', 'Contraseña Incorrecta');
+                return redirect()->to('/ingreso');
                 //puede ir base_url();
             }
         } else {
-            $session->setFlashdata('msg', 'No Existe el Email o es Incorrecto');
-            return redirect()->to('/');
+            $session->setFlashdata('success', 'No Existe el Email o es Incorrecto');
+            return redirect()->to('/ingreso');
         }
         
     }
