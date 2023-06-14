@@ -3,7 +3,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Filters\FilterInterface;
 
-class Auth implements FilterInterface
+class Admin implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {   
@@ -16,14 +16,10 @@ class Auth implements FilterInterface
             $session->setFlashdata('success', 'Debes iniciar sesión.');
             return redirect()->to('ingreso');
         }
-        //dd($_SESSION['perfil_id'] != "1");
-        if ($_SESSION['perfil_id'] == "2") {
-            return;
-        }
-        /*if ($_SESSION['perfil_id'] != "1") {
+        if ($_SESSION['perfil_id'] != "1") {
             $session->setFlashdata('success', 'No tienes los permisos.');
             return redirect()->to('');
-        }*/
+        }
     }
     //-----------------------------------------
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)

@@ -227,6 +227,17 @@ class Carrito_controller extends Controller {
             	//Descuenta del stock y lo guarda en la base de datos
                 //$stock_actual = $item|['qty'];
             	$producto->sacar_del_stock($item['id'], $item['qty']);
+                /*$producto = $producto->where('id_producto', $item['id'])->first();
+                dd($producto->where('id_producto', $item['id'])->first());
+                $nuevo_stock = $producto['stock'] - $item['qty'];
+                $data = [
+
+                    'stock' => $nuevo_stock,
+
+                ];
+
+                $producto->update($item['producto_id'], $data);*/
+
 
 			endforeach;
 

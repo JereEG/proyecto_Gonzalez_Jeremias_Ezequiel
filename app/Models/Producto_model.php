@@ -36,8 +36,9 @@ class Producto_model extends Model
     public function sacar_del_stock($id, $cantidad_que_saco) {
         $producto = new Producto_model();
 
-        $producto->find($id)['stock'] - $cantidad_que_saco;
-        /*
+        //$producto->find($id)['stock'] - $cantidad_que_saco;
+        $aux = $producto->where('id_producto', $id)->first();
+        $nuevo_stock = $aux['stock'] - $cantidad_que_saco;
         $data = [
 
             'stock' => $nuevo_stock,
@@ -45,6 +46,6 @@ class Producto_model extends Model
         ];
 
         $producto->update($id, $data);
-        */
+        
     }
 }

@@ -49,62 +49,62 @@ $routes->post('/enviar-form', 'Usuario_controller::formValidation');
  */
 $routes->get('ingreso', 'Login_controller::ingreso');
 $routes->post('/enviar-form-login', 'Login_controller::auth');
-$routes->get('/cerrar-login', 'Login_controller::logout');
+$routes->get('/cerrar-login', 'Login_controller::logout', ['filter' => 'auth']);
 //$routes->get('/principal', 'Home::prueba');
 
 
 /**
  * Rutas del crud de usuarios
  */
-$routes->get('crud_usuarios', 'Usuario_controller::cargar_crud', ['filter' => 'auth']);
-$routes->get('ver_usuarios_eliminados', 'Usuario_controller::ver_eliminados', ['filter' => 'auth']);
+$routes->get('crud_usuarios', 'Usuario_controller::cargar_crud', ['filter' => 'admin']);
+$routes->get('ver_usuarios_eliminados', 'Usuario_controller::ver_eliminados', ['filter' => 'admin']);
 
-$routes->get('/ver_editar_usuario/(:num)', 'Usuario_controller::ver_editarUsuario/$1', ['filter' => 'auth']);
+$routes->get('/ver_editar_usuario/(:num)', 'Usuario_controller::ver_editarUsuario/$1', ['filter' => 'admin']);
 
-$routes->post('/editar_usuario/(:num)', 'Usuario_controller::editarUsuario/$1', ['filter' => 'auth']);
+$routes->post('/editar_usuario/(:num)', 'Usuario_controller::editarUsuario/$1', ['filter' => 'admin']);
 
-$routes->get('/eliminar_usuario/(:num)', 'Usuario_controller::eliminarUsuario/$1', ['filter' => 'auth']);
+$routes->get('/eliminar_usuario/(:num)', 'Usuario_controller::eliminarUsuario/$1', ['filter' => 'admin']);
 
-$routes->get('/restaurar_usuario/(:num)', 'Usuario_controller::restaurarUsuario/$1', ['filter' => 'auth']);
+$routes->get('/restaurar_usuario/(:num)', 'Usuario_controller::restaurarUsuario/$1', ['filter' => 'admin']);
 
 /**
  * Rutas de Productos
  */
-$routes->get('/crud', 'ProductoController::index', ['filter' => 'auth']);
+$routes->get('/crud', 'ProductoController::index', ['filter' => 'admin']);
 //$routes->get('/agregar', 'ProductoController::index');
-$routes->get('/produ-form', 'ProductoController::crearproducto', ['filter' => 'auth']);
-$routes->post('/enviar-prod', 'ProductoController::alta_producto', ['filter' => 'auth']);
+$routes->get('/produ-form', 'ProductoController::crearproducto', ['filter' => 'admin']);
+$routes->post('/enviar-prod', 'ProductoController::alta_producto', ['filter' => 'admin']);
 
-$routes->get('/vista_editar/(:num)', 'ProductoController::vistaEditarProducto/$1', ['filter' => 'auth']);
+$routes->get('/vista_editar/(:num)', 'ProductoController::vistaEditarProducto/$1', ['filter' => 'admin']);
 
-$routes->post('/editar/(:num)', 'ProductoController::editarProducto/$1', ['filter' => 'auth']);
+$routes->post('/editar/(:num)', 'ProductoController::editarProducto/$1', ['filter' => 'admin']);
 
-$routes->get('/produ-eliminados', 'ProductoController::vista_productos_eliminados', ['filter' => 'auth']);
+$routes->get('/produ-eliminados', 'ProductoController::vista_productos_eliminados', ['filter' => 'admin']);
 
-$routes->get('/produ-eliminar/(:num)', 'ProductoController::eliminarProducto/$1', ['filter' => 'auth']);
+$routes->get('/produ-eliminar/(:num)', 'ProductoController::eliminarProducto/$1', ['filter' => 'admin']);
 
-$routes->get('/produ-restaurar/(:num)', 'ProductoController::restaurarProducto/$1', ['filter' => 'auth']);
+$routes->get('/produ-restaurar/(:num)', 'ProductoController::restaurarProducto/$1', ['filter' => 'admin']);
 
 
 
 /**
  * Rutas de Categorías
  */
-$routes->get('crud_categorias', 'CategoriasController::index', ['filter' => 'auth']);
+$routes->get('crud_categorias', 'CategoriasController::index', ['filter' => 'admin']);
 
-$routes->get('/categoria_form', 'CategoriasController::crearcategoria', ['filter' => 'auth']);
+$routes->get('/categoria_form', 'CategoriasController::crearcategoria', ['filter' => 'admin']);
 
-$routes->post('/enviar_categoria', 'CategoriasController::alta_categoria', ['filter' => 'auth']);
+$routes->post('/enviar_categoria', 'CategoriasController::alta_categoria', ['filter' => 'admin']);
 
-$routes->get('/vista_editar_categoria/(:num)', 'CategoriasController::vistaEditarCategoria/$1', ['filter' => 'auth']);
+$routes->get('/vista_editar_categoria/(:num)', 'CategoriasController::vistaEditarCategoria/$1', ['filter' => 'admin']);
 
-$routes->get('/categoria_eliminados', 'CategoriasController::vista_categoria_eliminados', ['filter' => 'auth']);
+$routes->get('/categoria_eliminados', 'CategoriasController::vista_categoria_eliminados', ['filter' => 'admin']);
 
-$routes->post('/editar_categoria/(:num)', 'CategoriasController::editarCategoria/$1', ['filter' => 'auth']);
+$routes->post('/editar_categoria/(:num)', 'CategoriasController::editarCategoria/$1', ['filter' => 'admin']);
 
-$routes->get('/eliminar_categoria/(:num)', 'CategoriasController::eliminarCategoria/$1', ['filter' => 'auth']);
+$routes->get('/eliminar_categoria/(:num)', 'CategoriasController::eliminarCategoria/$1', ['filter' => 'admin']);
 
-$routes->get('/restaurar_categoria/(:num)', 'CategoriasController::restaurarCategoria/$1', ['filter' => 'auth']);
+$routes->get('/restaurar_categoria/(:num)', 'CategoriasController::restaurarCategoria/$1', ['filter' => 'admin']);
 
 /**
  * Rutas del carrito
@@ -128,21 +128,21 @@ $routes->get('eliminar_carrito', 'Carrito_controller::eliminar_carrito', ['filte
  */
 //la carga se encarga $routes->get('contacto', 'Home::f_contacto');
 
-$routes->get('consultas_view', 'Consulta_controller::ver_consultas');
-$routes->get('ver_consultas_respondidas', 'Consulta_controller::ver_consultas_respondidas');
+$routes->get('consultas_view', 'Consulta_controller::ver_consultas', ['filter' => 'admin']);
+$routes->get('ver_consultas_respondidas', 'Consulta_controller::ver_consultas_respondidas', ['filter' => 'admin']);
 
-$routes->post('enviar_consulta', 'Consulta_controller::formValidation');
+$routes->post('enviar_consulta', 'Consulta_controller::formValidation');//No admin ni logueado
 
-$routes->get('/responder_consulta/(:num)', 'Consulta_controller::responderConsulta/$1');
+$routes->get('/responder_consulta/(:num)', 'Consulta_controller::responderConsulta/$1', ['filter' => 'admin']);
 
-$routes->get('/restaurar_consulta/(:num)', 'Consulta_controller::restaurarConsulta/$1');
+$routes->get('/restaurar_consulta/(:num)', 'Consulta_controller::restaurarConsulta/$1', ['filter' => 'admin']);
 
 
-/**
- * Rutas de las compras
+/**Admin
+ * Rutas de las ventas
  */
-$routes->get('listar_ventas', 'Ventas_controller::ver_ventas', ['filter' => 'auth']);
-$routes->get('/ver_venta_detalle/(:num)', 'Ventas_controller::ver_venta_detalle/$1', ['filter' => 'auth']);
+$routes->get('listar_ventas', 'Ventas_controller::ver_ventas', ['filter' => 'admin']);
+$routes->get('/ver_venta_detalle/(:num)', 'Ventas_controller::ver_venta_detalle/$1', ['filter' => 'admin']);
 
 
 /*
