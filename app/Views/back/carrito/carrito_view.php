@@ -70,13 +70,31 @@
                             </td>
 
                             <td>
-                                
-                                <a class="btn btn-primary" href="<?php echo base_url();?>sumar_a_carrito/<?php echo $item['rowid'];?>">
-                                    +
-                                </a>
-                                <a class="btn btn-danger" href="<?php echo base_url();?>restar_a_carrito/<?php echo $item['rowid'];?>">
+                                <?php foreach ($productos  as $producto) {
+                                            if ($producto['id_producto'] == $item['id']) {
+                                                $producto_en_carrito = $producto;
+                                                break;
+                                            }
+                                } ;?>
+                                <?php if ($item['qty'] < $producto_en_carrito["stock"]) : ?>
+                                    <a class="btn btn-primary" href="<?php echo base_url(); ?>sumar_a_carrito/<?php echo $item['rowid']; ?>">
+                                                    +
+                                     </a>
+                                <?php else : ?>
+                                    <a class="btn btn-secondary" href="#">
+                                                    +
+                                     </a>
+                                <?php endif ?>
+                                <?php if ($item['qty'] > $producto_en_carrito["stock_min"]) : ?>
+                                   <a class="btn btn-danger" href="<?php echo base_url();?>restar_a_carrito/<?php echo $item['rowid'];?>">
                                     -
-                                </a>
+                                    </a>
+                                <?php else : ?>
+                                    <a class="btn btn-secondary" href="#">
+                                                    -
+                                    </a>
+                                <?php endif ?>
+                                
                             </td>
                             <td>
 

@@ -111,6 +111,9 @@ class Carrito_controller extends Controller {
         
 
         $data['titulo'] = 'Carrito';
+        $productoModel = new Producto_Model();
+        $data['productos'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
+        
         echo view('front\head_view', $data);
         echo view('front\nav_view');
         echo view('back\carrito\carrito_view');

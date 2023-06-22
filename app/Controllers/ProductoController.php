@@ -63,11 +63,14 @@ class ProductoController extends Controller {
         
         $data['titulo'] = 'Editar producto';
         $categoriaModel = new Categoria_model();
+        
         $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
         //$id= $this->request->getPostGet('id');
         //$data['producto'] = $productoModel->where('id', $id)->first();
         $data['old'] = $productoModel->where('id_producto', $id)->first();
-
+        //dd($data['old']['cod_categoria']);
+        $data['categoria_producto'] = $categoriaModel->where('id_categoria', $data['old']['cod_categoria'])->first();
+        
         echo view('front\head_view', $data);
         echo view('front\nav_view');
         echo view('back\productos\editar_producto_view', $data);
@@ -143,7 +146,9 @@ class ProductoController extends Controller {
             ],
             /*Error de validación de codeIgniter Visto por el profesor Ivan Sambrana
             https://forum.codeigniter.com/showthread.php?tid=86535&page=2
-            */
+
+            image/gif, image/png, image/jpeg
+            mime_in[field_name,image/png,image/jpeg]
             'imagen' => [
                 'rules'  => 'is_image[imagen]',
                 'errors' => [
@@ -151,6 +156,14 @@ class ProductoController extends Controller {
                     'is_image[imagen]' => 'A {field} debe ser una imagen.',
                 ]
             ],
+            */
+            'imagen' => [
+                'rules' => 'required|mime_in[imagen, image/gif,image/png,image/jpeg]',
+                'errors' => [
+                    'required' => 'A {field} debes subir una imagen.',
+                ]
+            ],
+            
         ];
 
         $producto = new Producto_model();
@@ -248,17 +261,28 @@ class ProductoController extends Controller {
         ];
 
         
-       /*Error de validación de codeIgniter Visto por el profesor Ivan Sambrana
-       https://forum.codeigniter.com/showthread.php?tid=86535&page=2
-       *if (!($this->request->getFile('imagen')->getName() === "")) { 
-            $rules['imagen'] = [
+        /*Error de validación de codeIgniter Visto por el profesor Ivan Sambrana
+            https://forum.codeigniter.com/showthread.php?tid=86535&page=2
+
+            image/gif, image/png, image/jpeg
+            mime_in[field_name,image/png,image/jpeg]
+            'imagen' => [
                 'rules'  => 'is_image[imagen]',
                 'errors' => [
                     'required' => 'A {field} debes subir una imagen.',
                     'is_image[imagen]' => 'A {field} debe ser una imagen.',
+                ]
+            ],
+            */
+            
+       if (!($this->request->getFile('imagen')->getName() === "")) { 
+            $rules['imagen'] = [
+                'rules' => 'required|mime_in[imagen, image/gif,image/png,image/jpeg]',
+                'errors' => [
+                    'required' => 'A {field} debes subir una imagen.',
                 ],
-                ];
-        }**/
+            ];
+        }
         
         $producto = new Producto_model();
         //var_dump($rules);
@@ -319,10 +343,11 @@ class ProductoController extends Controller {
             
             //$producto = new Producto_model();
             //$dato['validation'] = $this->validator;
-            //$data['old'] = $producto->where('id_producto', $id)->first();
+            $data['old'] = $producto->where('id_producto', $id)->first();
             $categoriaModel = new Categoria_model();
             //$data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
-            
+            $data['categoria_producto'] = $categoriaModel->where('id_categoria', $data['old']['cod_categoria'])->first();
+
             $dato['titulo'] = 'Editar producto';
             echo view('front/head_view', $dato);
             echo view('front/nav_view');
