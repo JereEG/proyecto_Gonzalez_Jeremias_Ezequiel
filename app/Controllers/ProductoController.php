@@ -70,7 +70,7 @@ class ProductoController extends Controller {
         $data['old'] = $productoModel->where('id_producto', $id)->first();
         //dd($data['old']['cod_categoria']);
         $data['categoria_producto'] = $categoriaModel->where('id_categoria', $data['old']['cod_categoria'])->first();
-        
+        //dd($data);
         echo view('front\head_view', $data);
         echo view('front\nav_view');
         echo view('back\productos\editar_producto_view', $data);
@@ -347,15 +347,22 @@ class ProductoController extends Controller {
             $categoriaModel = new Categoria_model();
             //$data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
             $data['categoria_producto'] = $categoriaModel->where('id_categoria', $data['old']['cod_categoria'])->first();
-
+            //dd($data['categoria_producto']);
+            $data['validation'] = $this->validator;
+            $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
+            $data['categoria_producto'] = $categoriaModel->where('id_categoria', $data['old']['cod_categoria'])->first();
             $dato['titulo'] = 'Editar producto';
             echo view('front/head_view', $dato);
             echo view('front/nav_view');
-            echo view('back/productos/editar_producto_view',[
+            echo view('back/productos/editar_producto_view',$data
+            /*[
                 'validation' => $this->validator,
                 'old' => $producto->where('id_producto', $id)->first(),
                 'categorias' => $categoriaModel->orderBy('id_categoria', 'DESC')->findAll(),
-            ]);
+                'categoria_producto' => $categoriaModel->where('id_categoria', $data['old']['cod_categoria'])->first(),
+
+            ]*/
+             );
             echo view('front\footer_view.php');
 
             /*if ($this->request->getVar('imagen') == NULL) {

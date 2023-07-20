@@ -54,9 +54,13 @@
                 <div class="col-md-6">
                     <label for="cod_categoria" class="form-label">Código de categoría</label>
                     <select required name="cod_categoria" class="form-select" >
-                        
-                        <option value="<?= $categoria_producto['id_categoria'] ?>">
-                        <?= $categoria_producto['id_categoria'] ?>-<?= $categoria_producto['nombre_categoria'] ?>
+                        <?php
+                            //dd($categoria_producto['id_categoria']);
+                            $id_categoria = $categoria_producto['id_categoria'];
+                            $nombre_categoria = $categoria_producto['nombre_categoria'];
+                        ?>
+                        <option value="<?= $id_categoria ?>">
+                        <?= $id_categoria ?>-<?= $nombre_categoria ?>
                         </option>
                         <?php foreach ($categorias as $categoria) : ?>
                             <?php if ( $categoria['categoria_eliminada'] == "NO") : ?>
