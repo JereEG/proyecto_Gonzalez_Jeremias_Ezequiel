@@ -18,6 +18,8 @@
 
     <h4 class="mb-3">Ingresar usuario</h4>
     <!-- envio de datos a la ruta /enviar-login ******* -->
+     <p>Perfil de admin: correo: admin@admin.com password: 12345</p>
+     <p>Perfil de cliente: correo: noadmin@gamil.com password: 12345</p>
     <form method="post" action="<?php echo base_url('/enviar-form-login') ?>">
 
       <div class="row g-3 p-4 ">
