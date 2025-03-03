@@ -144,6 +144,11 @@ $routes->get('/restaurar_consulta/(:num)', 'Consulta_controller::restaurarConsul
 $routes->get('listar_ventas', 'Ventas_controller::ver_ventas', ['filter' => 'admin']);
 $routes->get('/ver_venta_detalle/(:num)', 'Ventas_controller::ver_venta_detalle/$1', ['filter' => 'admin']);
 
+/**
+ * TestDB 
+ */
+$routes->get('/testdb', 'TestDB::index');
+
 
 /*
  * --------------------------------------------------------------------
