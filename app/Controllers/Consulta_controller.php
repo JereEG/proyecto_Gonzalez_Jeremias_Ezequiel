@@ -40,7 +40,7 @@ class Consulta_controller extends Controller {
         echo view('front/head_view',$data);
         echo view('front/nav_view');
         //echo view('back/usuario/registrarse', ['validation' => $this->validator]);
-        echo view('front\contacto', ['validation' => $this->validator]);
+        echo view('front/contacto', ['validation' => $this->validator]);
         echo view('front/footer_view');
 
       } else {
@@ -69,10 +69,10 @@ class Consulta_controller extends Controller {
     $v_consulta_model = new Consulta_model();
     $data['consultas'] = $v_consulta_model->orderBy('id_consulta')->findAll();
 
-    echo view('front\head_view', $data);
-    echo view('front\nav_view');
-    echo view('back\consultas\consultas_view', $data);
-    echo view('front\footer_view.php');
+    echo view('front/head_view', $data);
+    echo view('front/nav_view');
+    echo view('back/consultas/consultas_view', $data);
+    echo view('front/footer_view.php');
   }
 
   public function ver_consultas_respondidas($id = null)
@@ -82,10 +82,10 @@ class Consulta_controller extends Controller {
     $v_consulta_model = new Consulta_model();
     $data['consultas'] = $v_consulta_model->orderBy('id_consulta')->findAll();
 
-    echo view('front\head_view', $data);
-    echo view('front\nav_view');
-    echo view('back\consultas\consultas_respondidas_view', $data);
-    echo view('front\footer_view.php');
+    echo view('front/head_view', $data);
+    echo view('front/nav_view');
+    echo view('back/consultas/consultas_respondidas_view', $data);
+    echo view('front/footer_view.php');
   }
 
 

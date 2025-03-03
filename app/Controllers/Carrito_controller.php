@@ -114,10 +114,10 @@ class Carrito_controller extends Controller {
         $productoModel = new Producto_Model();
         $data['productos'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
         
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\carrito\carrito_view');
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/carrito/carrito_view');
+        echo view('front/footer_view.php');
     }
 
     public function catalogo(){
@@ -128,10 +128,10 @@ class Carrito_controller extends Controller {
         $productoModel = new Producto_Model();
         $data['productos'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
             
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\carrito\productos_catalogo_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/carrito/productos_catalogo_view', $data);
+        echo view('front/footer_view.php');
 	
 	}
      public function borrar_carrito()
@@ -255,10 +255,10 @@ class Carrito_controller extends Controller {
 		$data['perfil_id'] = $_SESSION['id_usuario'];
 		$data['nombre_apellido'] = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
         $data['cabecera_id'] = $cabecera_id;
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\carrito\compra_finalizada_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/carrito/compra_finalizada_view', $data);
+        echo view('front/footer_view.php');
 	
 
 		//$final = $this->cart->destroy();

@@ -24,7 +24,7 @@ class Ventas_controller extends Controller {
 
     echo view('front/head_view',$dato);
     echo view('front/nav_view');
-    echo view('back\Ventas\lista_ventas_view', $dato);
+    echo view('back/Ventas/lista_ventas_view', $dato);
     echo view('front/footer_view');
   }
  
@@ -51,7 +51,7 @@ class Ventas_controller extends Controller {
 
     echo view('front/head_view', $data);
     echo view('front/nav_view');
-    echo view('back\Ventas\venta_detalle_view', $data);
+    echo view('back/Ventas/venta_detalle_view', $data);
     echo view('front/footer_view');
   }
 

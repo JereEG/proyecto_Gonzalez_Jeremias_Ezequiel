@@ -68,10 +68,10 @@ class Usuario_controller extends Controller {
     $v_perfiles_model = new Perfiles_model();
     $data['perfiles'] = $v_perfiles_model->findAll();
 
-    echo view('front\head_view', $data);
-    echo view('front\nav_view');
-    echo view('back\usuario\usuarios_view', $data);
-    echo view('front\footer_view.php');
+    echo view('front/head_view', $data);
+    echo view('front/nav_view');
+    echo view('back/usuario/usuarios_view', $data);
+    echo view('front/footer_view.php');
   }
 
   public function ver_eliminados($id = null)
@@ -84,10 +84,10 @@ class Usuario_controller extends Controller {
     $v_perfiles_model = new Perfiles_model();
     $data['perfiles'] = $v_perfiles_model->findAll();
 
-    echo view('front\head_view', $data);
-    echo view('front\nav_view');
-    echo view('back\usuario\usuarios_eliminados_view', $data);
-    echo view('front\footer_view.php');
+    echo view('front/head_view', $data);
+    echo view('front/nav_view');
+    echo view('back/usuario/usuarios_eliminados_view', $data);
+    echo view('front/footer_view.php');
   }
 
   public function ver_editarUsuario($id = null) 
@@ -99,10 +99,10 @@ class Usuario_controller extends Controller {
     $v_perfiles_model = new Perfiles_model();
     $data['perfiles'] = $v_perfiles_model->findAll();
 
-    echo view('front\head_view', $data);
-    echo view('front\nav_view');
-    echo view('back\usuario\editar_usuario_view', $data);
-    echo view('front\footer_view.php');
+    echo view('front/head_view', $data);
+    echo view('front/nav_view');
+    echo view('back/usuario/editar_usuario_view', $data);
+    echo view('front/footer_view.php');
   }
 
   public function editarUsuario($id = null)

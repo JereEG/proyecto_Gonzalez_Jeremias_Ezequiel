@@ -29,7 +29,7 @@ class Facturas_controller extends Controller {
         $venta_cabecera = new VentasCabecera_model();
         $venta_cabecera = $venta_cabecera->where('usuario_id', $cabecera_id)->first();
         
-        echo view('\back\facturas\factura_view.php');
+        echo view('/back/facturas/factura_view.php');
 
     }
 }

@@ -24,10 +24,10 @@ class CategoriasController extends Controller {
         $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
 
         $data['titulo'] = 'CRUD Categorías';
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\categorias\categorias_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/categorias/categorias_view', $data);
+        echo view('front/footer_view.php');
     }
 
     public function vistaEditarCategoria($id = null) {
@@ -37,10 +37,10 @@ class CategoriasController extends Controller {
         $data['categoria'] = $categoriaModel->where('id_categoria', $id)->first();
      
 
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\categorias\editar_categoria_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/categorias/editar_categoria_view', $data);
+        echo view('front/footer_view.php');
     }
 
     public function editarCategoria($id = null) {
@@ -69,13 +69,13 @@ class CategoriasController extends Controller {
             $data['categoria'] = $categoriaModel->where('id_categoria', $id)->first();
         
 
-            echo view('front\head_view', $data);
-            echo view('front\nav_view');
-            echo view('back\categorias\editar_categoria_view',[
+            echo view('front/head_view', $data);
+            echo view('front/nav_view');
+            echo view('back/categorias/editar_categoria_view',[
                 'validation' => $this->validator,
                 'categoria' => $categoriaModel->where('id_categoria', $id)->first(),
             ]);
-            echo view('front\footer_view.php');
+            echo view('front/footer_view.php');
         }
     }
 
@@ -100,10 +100,10 @@ class CategoriasController extends Controller {
     
     public function crearcategoria() {
         $data['titulo'] = 'Crear categoría';
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\categorias\crear_categoria_view');
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/categorias/crear_categoria_view');
+        echo view('front/footer_view.php');
     }
 
     public function alta_categoria() {
@@ -131,13 +131,13 @@ class CategoriasController extends Controller {
             
 
 
-            echo view('front\head_view', $data);
-            echo view('front\nav_view');
-            echo view('back\categorias\crear_categoria_view',[
+            echo view('front/head_view', $data);
+            echo view('front/nav_view');
+            echo view('back/categorias/crear_categoria_view',[
                 'validation' => $this->validator,
         
             ]);
-            echo view('front\footer_view.php');
+            echo view('front/footer_view.php');
         }
     }
 
@@ -146,10 +146,10 @@ class CategoriasController extends Controller {
         $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
 
         $data['titulo'] = 'Categorías eliminadas';
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\categorias\categorias_eliminadas_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/categorias/categorias_eliminadas_view', $data);
+        echo view('front/footer_view.php');
     }
 
 }

@@ -26,10 +26,10 @@ class ProductoController extends Controller {
         $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
 
         $data['titulo'] = 'Crud_productos';
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\productos\crud_productos', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/productos/crud_productos', $data);
+        echo view('front/footer_view.php');
     }
     public function vista_productos_eliminados() {
         $productoModel = new Producto_model();
@@ -38,10 +38,10 @@ class ProductoController extends Controller {
         //$data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
         $data['titulo'] = 'Productos Eliminados';
 
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\productos\productos_eliminados_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/productos/productos_eliminados_view', $data);
+        echo view('front/footer_view.php');
     }
 
     public function crearproducto() {
@@ -52,10 +52,10 @@ class ProductoController extends Controller {
         $data['categorias'] = $categoriaModel->orderBy('id_categoria', 'DESC')->findAll();
         
         $data['titulo'] = 'Alta producto';
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\productos\alta_producto_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/productos/alta_producto_view', $data);
+        echo view('front/footer_view.php');
     }
     public function vistaEditarProducto($id = null) {
 
@@ -71,10 +71,10 @@ class ProductoController extends Controller {
         //dd($data['old']['cod_categoria']);
         $data['categoria_producto'] = $categoriaModel->where('id_categoria', $data['old']['cod_categoria'])->first();
         //dd($data);
-        echo view('front\head_view', $data);
-        echo view('front\nav_view');
-        echo view('back\productos\editar_producto_view', $data);
-        echo view('front\footer_view.php');
+        echo view('front/head_view', $data);
+        echo view('front/nav_view');
+        echo view('back/productos/editar_producto_view', $data);
+        echo view('front/footer_view.php');
     }
     public function eliminarProducto($id = null) {
         $producto = new Producto_model();
@@ -363,7 +363,7 @@ class ProductoController extends Controller {
 
             ]*/
              );
-            echo view('front\footer_view.php');
+            echo view('front/footer_view.php');
 
             /*if ($this->request->getVar('imagen') == NULL) {
                 echo '<script language="javascript">alert("No se cargo la imagen");</script>'; # code...
