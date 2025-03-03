@@ -59,7 +59,7 @@ class CategoriasController extends Controller {
                 'nombre_categoria' => $this->request->getVar('nombre-categoria'),
             ];
 
-            $categoriaModel->update($id, $data);
+            // $categoriaModel->update($id, $data);
 
             return $this->response->redirect(site_url('/crud_categorias'));
         } else {
@@ -84,7 +84,7 @@ class CategoriasController extends Controller {
         $data = [
                     'categoria_eliminada' => "SI"
                 ];
-        $categoriaModel->update($id, $data);
+        // $categoriaModel->update($id, $data);
 
         return $this->response->redirect(site_url('/crud_categorias'));
     }
@@ -93,7 +93,7 @@ class CategoriasController extends Controller {
         $data = [
                     'categoria_eliminada' => "NO"
                 ];
-        $categoriaModel->update($id, $data);
+        // $categoriaModel->update($id, $data);
 
         return $this->response->redirect(site_url('/crud_categorias'));
     }
@@ -122,7 +122,7 @@ class CategoriasController extends Controller {
                 'nombre_categoria' => $this->request->getVar('nombre-categoria'),
             ];
 
-            $categoriaModel->insert($data);
+            // $categoriaModel->insert($data);
 
             return $this->response->redirect(site_url('/crud_categorias'));
         } else {

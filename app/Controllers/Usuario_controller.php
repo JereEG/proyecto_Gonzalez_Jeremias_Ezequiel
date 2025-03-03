@@ -144,7 +144,7 @@ class Usuario_controller extends Controller {
       ]);
 
       
-      $formModel->update($id, $array);
+      // $formModel->update($id, $array);
       return $this->response->redirect(base_url('/crud_usuarios'));
 
     }
@@ -157,7 +157,7 @@ class Usuario_controller extends Controller {
     $data = [
       'baja' => "SI"
     ];
-    $v_usuarioModel->update($id, $data);
+    // $v_usuarioModel->update($id, $data);
 
     return $this->response->redirect(site_url('/crud_usuarios'));
   }
@@ -167,7 +167,7 @@ class Usuario_controller extends Controller {
     $data = [
       'baja' => "NO"
     ];
-    $v_usuarioModel->update($id, $data);
+    // $v_usuarioModel->update($id, $data);
 
     return $this->response->redirect(site_url('/crud_usuarios'));
   }

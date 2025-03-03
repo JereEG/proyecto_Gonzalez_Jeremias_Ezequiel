@@ -81,7 +81,7 @@ class ProductoController extends Controller {
         $data = [
                     'eliminado' => "SI"
                 ];
-        $producto->update($id, $data);
+        // $producto->update($id, $data);
 
         return $this->response->redirect(site_url('/crud'));
     }
@@ -90,7 +90,7 @@ class ProductoController extends Controller {
         $data = [
                     'eliminado' => "NO"
                 ];
-        $producto->update($id, $data);
+        // $producto->update($id, $data);
 
         return $this->response->redirect(site_url('/crud'));
     }
@@ -193,7 +193,7 @@ class ProductoController extends Controller {
             //var_dump($data);
             //exit();
             //$producto = new Producto_model();
-            $producto->insert($data);
+            // $producto->insert($data);
 
 
             return $this->response->redirect(site_url('/crud'));
@@ -315,7 +315,7 @@ class ProductoController extends Controller {
                     //'eliminado' => NO
                 ];
 
-                $producto->update($id, $data);
+                // $producto->update($id, $data);
 
                 return $this->response->redirect(site_url('/crud'));
 
@@ -330,7 +330,7 @@ class ProductoController extends Controller {
                     //'eliminado' => NO
                 ];
 
-                $producto->update($id, $data);
+                // $producto->update($id, $data);
                 
                 return $this->response->redirect(site_url('/crud'));
                 

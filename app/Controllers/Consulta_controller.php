@@ -95,7 +95,7 @@ class Consulta_controller extends Controller {
     $data = [
       'respondido' => "SI"
     ];
-    $v_consulta_model->update($id, $data);
+    // $v_consulta_model->update($id, $data);
 
     return $this->response->redirect(site_url('/consultas_view'));
   }
@@ -105,7 +105,7 @@ class Consulta_controller extends Controller {
     $data = [
       'respondido' => "NO"
     ];
-    $v_consulta_model->update($id, $data);
+    // $v_consulta_model->update($id, $data);
 
     return $this->response->redirect(site_url('/consultas_view'));
   }
